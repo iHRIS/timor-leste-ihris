@@ -1,0 +1,581 @@
+{
+  "resourceType": "Bundle",
+  "id": "Municipality",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M1",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "name": "Lautém",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "municipality",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type"
+              }
+            ],
+            "text": "Municipality"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "jdn",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M2",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "name": "Baucau",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "municipality",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type"
+              }
+            ],
+            "text": "Municipality"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "jdn",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M3",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "name": "Viqueque",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "municipality",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type"
+              }
+            ],
+            "text": "Municipality"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "jdn",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M4",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "name": "Manatuto",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "municipality",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type"
+              }
+            ],
+            "text": "Municipality"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "jdn",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M5",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "name": "Dili",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "municipality",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type"
+              }
+            ],
+            "text": "Municipality"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "jdn",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "name": "Aileu",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "municipality",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type"
+              }
+            ],
+            "text": "Municipality"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "jdn",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M7",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "name": "Manufahi",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "municipality",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type"
+              }
+            ],
+            "text": "Municipality"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "jdn",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M7"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M8",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "name": "Liquiçá",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "municipality",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type"
+              }
+            ],
+            "text": "Municipality"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "jdn",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M8"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M9",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "name": "Ermera",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "municipality",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type"
+              }
+            ],
+            "text": "Municipality"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "jdn",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M9"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M10",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "name": "Ainaro",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "municipality",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type"
+              }
+            ],
+            "text": "Municipality"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "jdn",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M10"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M11",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "name": "Bobonaro",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "municipality",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type"
+              }
+            ],
+            "text": "Municipality"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "jdn",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M11"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M12",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "name": "Covalima",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "municipality",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type"
+              }
+            ],
+            "text": "Municipality"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "jdn",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M12"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M13",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "name": "Oecusse (SAR)",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "municipality",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type"
+              }
+            ],
+            "text": "Municipality"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "jdn",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M13"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M14",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "name": "Atauro",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "municipality",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type"
+              }
+            ],
+            "text": "Municipality"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "jdn",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M14"
+      }
+    }
+  ]
+}

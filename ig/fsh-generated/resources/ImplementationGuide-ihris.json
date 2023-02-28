@@ -1360,6 +1360,27 @@
       },
       {
         "reference": {
+          "reference": "Bundle/Municipality"
+        },
+        "name": "Municipality",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/Subdistrict"
+        },
+        "name": "Subdistrict",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/Sucos"
+        },
+        "name": "Sucos",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/basic-location-constraint"
         },
         "name": "basic-location-constraint",
