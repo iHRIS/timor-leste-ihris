@@ -1,0 +1,68 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "ihris-profession",
+  "url": "http://ihris.org/fhir/Questionnaire/ihris-profession",
+  "title": "iHRIS Profession Workflow",
+  "description": "iHRIS workflow to record a Profession",
+  "name": "ihris-profession",
+  "status": "active",
+  "date": "2020-08-27",
+  "purpose": "Workflow page for recording a Profession information.",
+  "item": [
+    {
+      "linkId": "Basic",
+      "text": "Profession",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "Basic.extension[0].extension[0]",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-profession-valueset",
+          "text": "Profession",
+          "type": "choice",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "Basic.extension[0].extension[1]",
+          "text": "Profession By PENSS",
+          "type": "choice",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-profession-valueset",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "Basic.extension[0].extension[2]",
+          "text": "Profession by KSP",
+          "type": "choice",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-profession-valueset",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "Basic.extension[0].extension[3]",
+          "text": "Std KSP (Municipality)",
+          "type": "choice",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-profession-valueset",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "Basic.extension[0].extension[4]",
+          "text": "Std KSP (Hospitals)",
+          "type": "choice",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-profession-valueset",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "Basic.extension[0].extension[5]",
+          "text": "Compound Allies",
+          "type": "choice",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-profession-valueset",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    }
+  ]
+}

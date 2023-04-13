@@ -80,19 +80,15 @@
         },
         {
           "url": "search",
-          "valueString": "Institution|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-education-history').extension.where(url='institution').valueReference.reference"
+          "valueString": "Education Background|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-education-history').extension.where(url='level').valueCoding.display"
         },
         {
           "url": "search",
-          "valueString": "Level|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-education-history').extension.where(url='level').valueCoding.display"
+          "valueString": "Qualification of Public Health|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-education-history').extension.where(url='publicHealth').valueCoding.display"
         },
         {
           "url": "search",
-          "valueString": "Educational Major|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-education-history').extension.where(url='educationalMajor').valueCoding.display"
-        },
-        {
-          "url": "search",
-          "valueString": "Year|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-education-history').extension.where(url='year').valueDate"
+          "valueString": "Qualification of Literary|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-education-history').extension.where(url='literary').valueString"
         },
         {
           "extension": [
@@ -106,19 +102,6 @@
             }
           ],
           "url": "field"
-        },
-        {
-          "extension": [
-            {
-              "url": "path",
-              "valueString": "Basic.extension:educationHistory.extension:year.value[x]:valueDate"
-            },
-            {
-              "url": "type",
-              "valueString": "year"
-            }
-          ],
-          "url": "field"
         }
       ]
     },
@@ -126,11 +109,11 @@
       "extension": [
         {
           "url": "title",
-          "valueString": "Education History"
+          "valueString": "Qualification"
         },
         {
           "url": "description",
-          "valueString": "Education History details"
+          "valueString": "Qualification details"
         },
         {
           "url": "name",
@@ -142,19 +125,15 @@
         },
         {
           "url": "field",
-          "valueString": "extension:educationHistory.extension:institution.value[x]:valueCoding"
-        },
-        {
-          "url": "field",
           "valueString": "extension:educationHistory.extension:level.value[x]:valueCoding"
         },
         {
           "url": "field",
-          "valueString": "extension:educationHistory.extension:educationalMajor.value[x]:valueCoding"
+          "valueString": "extension:educationHistory.extension:publicHealth.value[x]:valueCoding"
         },
         {
           "url": "field",
-          "valueString": "extension:educationHistory.extension:year.value[x]:valueDate"
+          "valueString": "extension:educationHistory.extension:literary.value[x]:valueString"
         }
       ],
       "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"

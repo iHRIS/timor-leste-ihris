@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "IhrisTimorLanguageValueSet",
+  "id": "ihris-timor-language-valueset",
+  "title": "iHRIS Timor Language ValueSet",
+  "version": "0.3.0",
+  "url": "http://ihris.org/fhir/ValueSet/ihris-timor-language-valueset",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ihris.org/fhir/CodeSystem/ihris-Timor-language"
+      }
+    ]
+  }
+}

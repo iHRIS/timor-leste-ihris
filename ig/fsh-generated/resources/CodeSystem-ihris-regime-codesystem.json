@@ -1,0 +1,22 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisRegimeCodeSystem",
+  "id": "ihris-regime-codesystem",
+  "title": "Regime",
+  "version": "0.3.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-regime-codesystem",
+  "concept": [
+    {
+      "code": "Geral",
+      "display": "Regime Geral"
+    },
+    {
+      "code": "Especial",
+      "display": "Rezime Especial"
+    }
+  ],
+  "date": "2020-11-14T08:41:04.362Z",
+  "count": 2
+}

@@ -15,14 +15,14 @@ Description:    "iHRIS profile of Practitioner."
 * identifier ^constraint[0].severity = #error
 * identifier ^constraint[0].expression = "'Practitioner' | 'identifier' | iif(system.exists(), system & '|' & value, value)"
 * identifier ^constraint[0].human = "The identifier must be unique and another record has this identifier"
-* identifier.use MS
-* identifier.use ^label = "Use"
+* identifier.use 0..0
 * identifier.type MS
 * identifier.type ^label = "Type"
 * identifier.type.coding 1..1 MS
 * identifier.type.coding ^label = "Type"
-* identifier.system MS
-* identifier.system ^label = "System"
+* identifier.type.coding from IhrisTimorIdentifierValueSet
+* identifier.type from IhrisTimorIdentifierValueSet
+* identifier.system 0..0
 * identifier.value MS
 * identifier.value ^label = "Value"
 * name 1..* MS
@@ -78,7 +78,7 @@ Description:    "iHRIS profile of Practitioner."
 * birthDate obeys ihris-age-18
 * birthDate ^minValueQuantity.system = "http://unitsofmeasure.org/"
 * birthDate ^minValueQuantity.code = #a
-* birthDate ^minValueQuantity.value = 100
+* birthDate ^minValueQuantity.value = 70
 * birthDate ^maxValueQuantity.system = "http://unitsofmeasure.org/"
 * birthDate ^maxValueQuantity.code = #a
 * birthDate ^maxValueQuantity.value = -18
@@ -88,6 +88,8 @@ Description:    "iHRIS profile of Practitioner."
 * communication ^label = "Communication"
 * communication.coding 1..1 MS
 * communication.coding ^label = "Language"
+* communication.coding from IhrisTimorLanguageValueSet
+* communication from IhrisTimorLanguageValueSet
 * communication.extension contains
     IhrisPractitionerLanguageProficiency named proficiency 0..* MS
 * communication.extension[proficiency] MS
@@ -95,11 +97,12 @@ Description:    "iHRIS profile of Practitioner."
 * communication.extension[proficiency].extension[level].valueCoding MS
 * communication.extension[proficiency].extension[type].valueCoding MS
 * extension contains
-    IhrisPractitionerResidence named residence 0..1 MS and
+    IhrisPractitionerPlaceOfBirth named placeOfBirth 0..1 MS and
     IhrisPractitionerNationality named nationality 0..1 and
     IhrisPractitionerMaritalStatus named maritalStatus 0..1 and
     IhrisPractitionerDependents named dependents 0..1
-* extension[residence].valueReference.reference MS
+* extension[placeOfBirth].valueString MS
+* extension[nationality].valueCoding MS
 * active 1..1 MS
 * active ^label = "Active"
 
@@ -122,25 +125,48 @@ Description:    "iHRIS extension for Practitioner Language Proficiency."
 * extension[type].valueCoding ^label = "Proficiency Type"
 * extension[type].valueCoding from http://terminology.hl7.org/ValueSet/v3-LanguageAbilityMode
 
-Extension:      IhrisPractitionerResidence
-Id:             ihris-practitioner-residence
-Title:          "iHRIS Practitioner Residence"
-Description:    "iHRIS extension for Practitioner residence."
+CodeSystem:         IhrisTimorLanguageCodeSystem
+Id:               ihris-Timor-language
+Title:            "Language"
+* ^version = "0.3.0"
+* #LAN001 "Portuguese" "Portuguese"
+* #LAN002 "Tetum" "Tetum"
+* #LAN003 "English" "English"
+
+ValueSet:         IhrisTimorLanguageValueSet
+Id:               ihris-timor-language-valueset
+Title:            "iHRIS Timor Language ValueSet"
+* ^version = "0.3.0"
+* codes from system IhrisTimorLanguageCodeSystem
+
+ValueSet:         IhrisTimorIdentifierValueSet
+Id:               ihris-timor-identifier-valueset
+Title:            "iHRIS Ethiopia Identifier ValueSet"
+* ^date = "2020-11-11T08:41:04.362Z"
+* ^version = "0.4.0"
+* codes from system IhrisTimorIdentifierCodeSystem
+
+CodeSystem:       IhrisTimorIdentifierCodeSystem
+Id:               ihris-timor-identifier
+Title:            "Identifier Type"
+* ^date = "2020-11-11T08:41:04.362Z"
+* ^version = "0.4.0"
+* #PMIS "PMIS"
+* #PAYROLL "Payroll Number"
+* #nationalID "National ID"
+* #tinNumber "Tin Number"
+* #licenseId "License Id"
+* #fileNo "File No"
+
+Extension:      IhrisPractitionerPlaceOfBirth
+Id:             ihris-practitioner-placeOfBirth
+Title:          "iHRIS Practitioner PlaceOfBirth"
+Description:    "iHRIS extension for Practitioner PlaceOfBirth."
 * ^context.type = #element
 * ^context.expression = "Practitioner"
-* value[x] only Reference
-* valueReference 1..1 MS
-* valueReference ^label = "Residence"
-* valueReference ^constraint[0].key = "ihris-location-residence"
-* valueReference ^constraint[0].severity = #warning
-* valueReference ^constraint[0].expression = "reference.matches('^Location/')"
-* valueReference ^constraint[0].human = "Must be a location"
-* valueReference only Reference(IhrisJurisdiction)
-* valueReference.reference 1..1 MS
-* valueReference.reference ^label = "Location"
-* valueReference.type 0..0
-* valueReference.identifier 0..0
-* valueReference.display 0..0
+* value[x] only string
+* valueString 1..1 MS
+* valueString ^label = "Place Of Birth"
 
 Extension:      IhrisPractitionerDependentDetail
 Id:             ihris-practitioner-dependent-detail

@@ -1,0 +1,62 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisRegimeGradeCodeSystem",
+  "id": "ihris-regime-grade-codesystem",
+  "title": "Regime Grade",
+  "version": "0.3.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-regime-grade-codesystem",
+  "concept": [
+    {
+      "code": "JUNIORB-1",
+      "display": "JUNIOR B-1"
+    },
+    {
+      "code": "JUNIORB-2",
+      "display": "JUNIOR B-2"
+    },
+    {
+      "code": "JUNIOR-1",
+      "display": "JUNIOR-1"
+    },
+    {
+      "code": "JUNIORB-3",
+      "display": "JUNIOR B-3"
+    },
+    {
+      "code": "JUNIORA-1",
+      "display": "JUNIOR A-1"
+    },
+    {
+      "code": "BASICO-1",
+      "display": "BASICO-1"
+    },
+    {
+      "code": "ASST-1",
+      "display": "ASST-1"
+    },
+    {
+      "code": "ASST-4",
+      "display": "ASST-4"
+    },
+    {
+      "code": "BASICO-2",
+      "display": "BASICO-2"
+    },
+    {
+      "code": "ASST-3",
+      "display": "ASST-3"
+    },
+    {
+      "code": "BASICO-3",
+      "display": "BASICO-3"
+    },
+    {
+      "code": "ASST-2",
+      "display": "ASST-2"
+    }
+  ],
+  "date": "2020-11-14T08:41:04.362Z",
+  "count": 12
+}

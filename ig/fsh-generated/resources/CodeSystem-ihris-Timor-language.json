@@ -1,0 +1,28 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisTimorLanguageCodeSystem",
+  "id": "ihris-Timor-language",
+  "title": "Language",
+  "version": "0.3.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-Timor-language",
+  "concept": [
+    {
+      "code": "LAN001",
+      "display": "Portuguese",
+      "definition": "Portuguese"
+    },
+    {
+      "code": "LAN002",
+      "display": "Tetum",
+      "definition": "Tetum"
+    },
+    {
+      "code": "LAN003",
+      "display": "English",
+      "definition": "English"
+    }
+  ],
+  "count": 3
+}

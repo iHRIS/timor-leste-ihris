@@ -1,0 +1,154 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisProfessionCodeSystem",
+  "id": "ihris-profession-codesystem",
+  "title": "iHRIS Profession CodeSystem",
+  "version": "0.3.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-profession-codesystem",
+  "concept": [
+    {
+      "code": "AdmFinansas",
+      "display": "Adm. Finansas",
+      "definition": "Adm. Finansas"
+    },
+    {
+      "code": "Administrasaun",
+      "display": "Administrasaun",
+      "definition": "Administrasaun"
+    },
+    {
+      "code": "Aliados",
+      "display": "Aliados",
+      "definition": "Aliados"
+    },
+    {
+      "code": "Analista",
+      "display": "Analista",
+      "definition": "Analista"
+    },
+    {
+      "code": "AsstEnfermeiros",
+      "display": "Asst. Enfermeiros",
+      "definition": "Asst. Enfermeiros"
+    },
+    {
+      "code": "ChefeCS",
+      "display": "Chefe CS",
+      "definition": "Chefe CS"
+    },
+    {
+      "code": "EIS",
+      "display": "EIS",
+      "definition": "EIS"
+    },
+    {
+      "code": "Elektromediku",
+      "display": "Elektromediku",
+      "definition": "Elektromediku"
+    },
+    {
+      "code": "Enfermeiro",
+      "display": "Enfermeiro",
+      "definition": "Enfermeiro"
+    },
+    {
+      "code": "EnfermeiroDentaria",
+      "display": "Enfermeiro Dentaria",
+      "definition": "Enfermeiro Dentaria"
+    },
+    {
+      "code": "Farmacia",
+      "display": "Farmacia",
+      "definition": "Farmacia"
+    },
+    {
+      "code": "Farmasista",
+      "display": "Farmasista",
+      "definition": "Farmasista"
+    },
+    {
+      "code": "Fisioterapia",
+      "display": "Fisioterapia",
+      "definition": "Fisioterapia"
+    },
+    {
+      "code": "MedicalRecord",
+      "display": "Medical Record",
+      "definition": "Medical Record"
+    },
+    {
+      "code": "MedicoGeral",
+      "display": "Medico Geral",
+      "definition": "Medico Geral"
+    },
+    {
+      "code": "Medicos",
+      "display": "Medicos",
+      "definition": "Medicos"
+    },
+    {
+      "code": "Motorista",
+      "display": "Motorista",
+      "definition": "Motorista"
+    },
+    {
+      "code": "Nutrisaun",
+      "display": "Nutrisaun",
+      "definition": "Nutrisaun"
+    },
+    {
+      "code": "Parteira",
+      "display": "Parteira",
+      "definition": "Parteira"
+    },
+    {
+      "code": "Parteiras",
+      "display": "Parteiras",
+      "definition": "Parteiras"
+    },
+    {
+      "code": "PesoalGeral",
+      "display": "Pesoal Geral",
+      "definition": "Pesoal Geral"
+    },
+    {
+      "code": "Radiologia",
+      "display": "Radiologia",
+      "definition": "Radiologia"
+    },
+    {
+      "code": "SaudeAmbiental",
+      "display": "Saude Ambiental",
+      "definition": "Saude Ambiental"
+    },
+    {
+      "code": "SaudePublika",
+      "display": "Saude Publika",
+      "definition": "Saude Publika"
+    },
+    {
+      "code": "SupportStaff",
+      "display": "Support Staff",
+      "definition": "Support Staff"
+    },
+    {
+      "code": "TekAxiliar",
+      "display": "Tek. Axiliar",
+      "definition": "Tek. Axiliar"
+    },
+    {
+      "code": "TekSupport",
+      "display": "Tek. Support",
+      "definition": "Tek. Support"
+    },
+    {
+      "code": "TeknikDentaria",
+      "display": "Teknik Dentaria",
+      "definition": "Teknik Dentaria"
+    }
+  ],
+  "date": "2020-11-11T08:41:04.362Z",
+  "count": 28
+}

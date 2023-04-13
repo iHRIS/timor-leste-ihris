@@ -1,0 +1,34 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisPublicHealthCodeSystem",
+  "id": "ihris-public-health-codeSystem",
+  "title": "Public Health CodeSystem",
+  "version": "0.1.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-public-health-codeSystem",
+  "concept": [
+    {
+      "code": "Saude",
+      "display": "Saude Publika",
+      "definition": "Saude Publika"
+    },
+    {
+      "code": "Enfermeiro",
+      "display": "Enfermeiro Dentaria",
+      "definition": "Enfermeiro Dentaria"
+    },
+    {
+      "code": "Dentaria",
+      "display": "Dentaria",
+      "definition": "Dentaria"
+    },
+    {
+      "code": "Teknik",
+      "display": "Teknik Dentaria",
+      "definition": "Teknik Dentaria"
+    }
+  ],
+  "date": "2020-09-29T08:41:04.362Z",
+  "count": 4
+}

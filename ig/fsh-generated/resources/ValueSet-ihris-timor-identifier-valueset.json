@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "IhrisTimorIdentifierValueSet",
+  "id": "ihris-timor-identifier-valueset",
+  "title": "iHRIS Ethiopia Identifier ValueSet",
+  "version": "0.4.0",
+  "url": "http://ihris.org/fhir/ValueSet/ihris-timor-identifier-valueset",
+  "date": "2020-11-11T08:41:04.362Z",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ihris.org/fhir/CodeSystem/ihris-timor-identifier"
+      }
+    ]
+  }
+}

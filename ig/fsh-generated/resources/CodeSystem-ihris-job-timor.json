@@ -1,0 +1,238 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisJobTimorCodeSystem",
+  "id": "ihris-job-timor",
+  "title": "iHRIS Job Title Code System for Timor-Leste",
+  "version": "0.1.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-job-timor",
+  "concept": [
+    {
+      "code": "Analista",
+      "display": "Analista",
+      "definition": "Analista"
+    },
+    {
+      "code": "Aliados",
+      "display": "Aliados",
+      "definition": "Aliados"
+    },
+    {
+      "code": "Ambiental",
+      "display": "Ambiental",
+      "definition": "Ambiental"
+    },
+    {
+      "code": "AssistantAdministrasaun",
+      "display": "Assistant Administrasaun",
+      "definition": "Assistant Administrasaun"
+    },
+    {
+      "code": "AssistantEnfermeiro",
+      "display": "Assistant Enfermeiro",
+      "definition": "Assistant Enfermeiro"
+    },
+    {
+      "code": "AssistantSMI",
+      "display": "Assistant SMI",
+      "definition": "Assistant SMI"
+    },
+    {
+      "code": "AssistantTecAdmin",
+      "display": "Assistant Tec Admin",
+      "definition": "Assistant Tec Admin"
+    },
+    {
+      "code": "ChefeCentroSaudeLaulara",
+      "display": "Chefe Centro Saude Laulara",
+      "definition": "Chefe Centro Saude Laulara"
+    },
+    {
+      "code": "ChefeCSAileuVilla",
+      "display": "Chefe CS Aileu Villa",
+      "definition": "Chefe CS Aileu Villa"
+    },
+    {
+      "code": "ChefeCSLequidoe",
+      "display": "Chefe CS Lequidoe",
+      "definition": "Chefe CS Lequidoe"
+    },
+    {
+      "code": "ChefeCSRemexio",
+      "display": "Chefe CS Remexio",
+      "definition": "Chefe CS Remexio"
+    },
+    {
+      "code": "Cleaner",
+      "display": "Cleaner",
+      "definition": "Cleaner"
+    },
+    {
+      "code": "DiretorSSMAileu",
+      "display": "Diretor SSM Aileu",
+      "definition": "Diretor SSM Aileu"
+    },
+    {
+      "code": "DPHONonCDC",
+      "display": "DPHO Non CDC",
+      "definition": "DPHO Non CDC"
+    },
+    {
+      "code": "DPHOSMI",
+      "display": "DPHO SMI",
+      "definition": "DPHO SMI"
+    },
+    {
+      "code": "Elektromedik",
+      "display": "Elektromedik",
+      "definition": "Elektromedik"
+    },
+    {
+      "code": "Enfarmagen",
+      "display": "Enfarmagen",
+      "definition": "Enfarmagen"
+    },
+    {
+      "code": "Enfermeira",
+      "display": "Enfermeira",
+      "definition": "Enfermeira"
+    },
+    {
+      "code": "EnfermeiraDentista",
+      "display": "Enfermeira Dentista",
+      "definition": "Enfermeira Dentista"
+    },
+    {
+      "code": "EnfermeiraSenior",
+      "display": "Enfermeira Senior",
+      "definition": "Enfermeira Senior"
+    },
+    {
+      "code": "Enfermeiro",
+      "display": "Enfermeiro",
+      "definition": "Enfermeiro"
+    },
+    {
+      "code": "EnfermeiroDentistaSenior",
+      "display": "Enfermeiro Dentista Senior",
+      "definition": "Enfermeiro Dentista Senior"
+    },
+    {
+      "code": "EnfermeiroSenior",
+      "display": "Enfermeiro Senior",
+      "definition": "Enfermeiro Senior"
+    },
+    {
+      "code": "Farmacista",
+      "display": "Farmacista",
+      "definition": "Farmacista"
+    },
+    {
+      "code": "FarmacistaLogistik",
+      "display": "Farmacista- Logistik",
+      "definition": "Farmacista- Logistik"
+    },
+    {
+      "code": "Finansas",
+      "display": "Finansas",
+      "definition": "Finansas"
+    },
+    {
+      "code": "Fisioterapia",
+      "display": "Fisioterapia",
+      "definition": "Fisioterapia"
+    },
+    {
+      "code": "Loundry",
+      "display": "Loundry",
+      "definition": "Loundry"
+    },
+    {
+      "code": "MedicalRecord",
+      "display": "Medical Record",
+      "definition": "Medical Record"
+    },
+    {
+      "code": "Medicina",
+      "display": "Medicina",
+      "definition": "Medicina"
+    },
+    {
+      "code": "MedicoGeral",
+      "display": "Medico Geral",
+      "definition": "Medico Geral"
+    },
+    {
+      "code": "Medicos",
+      "display": "Medicos",
+      "definition": "Medicos"
+    },
+    {
+      "code": "MedikuGejal",
+      "display": "Mediku Gejal",
+      "definition": "Mediku Gejal"
+    },
+    {
+      "code": "Motorista",
+      "display": "Motorista",
+      "definition": "Motorista"
+    },
+    {
+      "code": "OfficialFinansas",
+      "display": "Official Finansas",
+      "definition": "Official Finansas"
+    },
+    {
+      "code": "OfficialMalariaDistrito",
+      "display": "Official Malaria Distrito",
+      "definition": "Official Malaria Distrito"
+    },
+    {
+      "code": "OficialLaboratorio",
+      "display": "Oficial Laboratorio",
+      "definition": "Oficial Laboratorio"
+    },
+    {
+      "code": "OSPDProgSaudeNutricao",
+      "display": "OSPD-Prog. Saude Nutricao",
+      "definition": "OSPD-Prog. Saude Nutricao"
+    },
+    {
+      "code": "Parteira",
+      "display": "Parteira",
+      "definition": "Parteira"
+    },
+    {
+      "code": "Parteirasenior",
+      "display": "Parteira senior",
+      "definition": "Parteira senior"
+    },
+    {
+      "code": "Radiologia",
+      "display": "Radiologia",
+      "definition": "Radiologia"
+    },
+    {
+      "code": "ResponsavelProgramTB",
+      "display": "Responsavel Program TB",
+      "definition": "Responsavel Program TB"
+    },
+    {
+      "code": "ResponsavelSIS-VE",
+      "display": "Responsavel SIS-VE",
+      "definition": "Responsavel SIS-VE"
+    },
+    {
+      "code": "Seguranca",
+      "display": "Seguranca ",
+      "definition": "Seguranca "
+    },
+    {
+      "code": "TecAdministrativo",
+      "display": "Tec Administrativo",
+      "definition": "Tec Administrativo"
+    }
+  ],
+  "count": 45
+}

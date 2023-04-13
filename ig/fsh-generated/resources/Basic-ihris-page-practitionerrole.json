@@ -63,15 +63,11 @@
         },
         {
           "url": "search",
-          "valueString": "Facility|PractitionerRole.location"
-        },
-        {
-          "url": "search",
-          "valueString": "Specialty|PractitionerRole.specialty"
+          "valueString": "Workplace|PractitionerRole.location"
         },
         {
           "url": "filter",
-          "valueString": "Job|role|http://ihris.org/fhir/ValueSet/ihris-job"
+          "valueString": "Job|role|http://ihris.org/fhir/ValueSet/ihris-job-timor"
         }
       ]
     },
@@ -107,11 +103,35 @@
         },
         {
           "url": "field",
-          "valueString": "PractitionerRole.specialty"
+          "valueString": "PractitionerRole.extension:investitureDate"
         },
         {
           "url": "field",
-          "valueString": "PractitionerRole.identifier"
+          "valueString": "PractitionerRole.extension:salary"
+        },
+        {
+          "url": "field",
+          "valueString": "PractitionerRole.extension:scale"
+        },
+        {
+          "url": "field",
+          "valueString": "PractitionerRole.extension:grade"
+        },
+        {
+          "url": "field",
+          "valueString": "PractitionerRole.extension:regime"
+        },
+        {
+          "url": "field",
+          "valueString": "PractitionerRole.extension:regimeGrade"
+        },
+        {
+          "url": "field",
+          "valueString": "PractitionerRole.extension:reasonForDepature"
+        },
+        {
+          "url": "field",
+          "valueString": "PractitionerRole.extension:jobInformationRemark"
         }
       ],
       "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"

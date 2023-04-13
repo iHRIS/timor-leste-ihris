@@ -21,7 +21,7 @@
         {
           "url": "resource",
           "valueReference": {
-            "reference": "CodeSystem/v2-0203"
+            "reference": "CodeSystem/ihris-timor-identifier"
           }
         },
         {

@@ -33,23 +33,6 @@
           "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-reason-departure-valueset",
           "required": true,
           "repeats": false
-        },
-        {
-          "linkId": "status",
-          "text": "Position Status",
-          "type": "choice",
-          "required": true,
-          "repeats": false,
-          "readOnly": true,
-          "answerOption": [
-            {
-              "valueCoding": {
-                "code": "closed",
-                "system": "http://ihris.org/fhir/CodeSystem/ihris-position-status"
-              },
-              "initialSelected": true
-            }
-          ]
         }
       ]
     }

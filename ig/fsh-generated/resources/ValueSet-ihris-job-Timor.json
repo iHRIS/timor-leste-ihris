@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "IhrisJobTimorValueset",
+  "id": "ihris-job-Timor",
+  "title": "iHRIS Job Title Value Set",
+  "description": "iHRIS ValueSet for: iHRISJobTimor",
+  "version": "0.1.0",
+  "url": "http://ihris.org/fhir/ValueSet/ihris-job-Timor",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ihris.org/fhir/CodeSystem/ihris-job-timor"
+      }
+    ]
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "resourceType": "Basic",
+  "id": "ihris-page-profession",
+  "meta": {
+    "profile": [
+      "http://ihris.org/fhir/StructureDefinition/ihris-page"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "page",
+        "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-display",
+      "extension": [
+        {
+          "url": "resource",
+          "valueReference": {
+            "reference": "StructureDefinition/ihris-basic-profession"
+          }
+        },
+        {
+          "url": "search",
+          "valueString": "Practitioner|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+        },
+        {
+          "extension": [
+            {
+              "url": "field",
+              "valueString": "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+            },
+            {
+              "url": "url",
+              "valueUrl": "/resource/view/practitioner/FIELD"
+            },
+            {
+              "url": "text",
+              "valueString": "View Health Worker"
+            },
+            {
+              "url": "button",
+              "valueBoolean": true
+            },
+            {
+              "url": "icon",
+              "valueString": "mdi-account-arrow-right"
+            }
+          ],
+          "url": "link"
+        },
+        {
+          "extension": [
+            {
+              "url": "field",
+              "valueString": "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+            },
+            {
+              "url": "url",
+              "valueUrl": "/questionnaire/ihris-profession/profession?practitioner=FIELD"
+            },
+            {
+              "url": "text",
+              "valueString": "Add Another"
+            },
+            {
+              "url": "button",
+              "valueBoolean": true
+            },
+            {
+              "url": "icon",
+              "valueString": "mdi-account-arrow-right"
+            }
+          ],
+          "url": "link"
+        },
+        {
+          "url": "search",
+          "valueString": "Profession|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='profession').valueCoding.display"
+        },
+        {
+          "url": "search",
+          "valueString": "Profession By PENSS|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='professionByPENSS').valueCoding.display"
+        },
+        {
+          "url": "search",
+          "valueString": "Profession by KSP|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='professionByKSP').valueCoding.display"
+        },
+        {
+          "url": "search",
+          "valueString": "Std KSP (Municipality)|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='stdKSPPHCM').valueCoding.display"
+        },
+        {
+          "url": "search",
+          "valueString": "Std KSP (Hospitals)|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='stdKSPPHCH').valueCoding.display"
+        },
+        {
+          "extension": [
+            {
+              "url": "path",
+              "valueString": "Basic.extension:practitioner.value[x]:valueReference"
+            },
+            {
+              "url": "readOnlyIfSet",
+              "valueBoolean": true
+            }
+          ],
+          "url": "field"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "title",
+          "valueString": "Profession"
+        },
+        {
+          "url": "description",
+          "valueString": "Profession details"
+        },
+        {
+          "url": "name",
+          "valueString": "Basic"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:practitioner"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:profession.extension:profession.value[x]:valueCoding"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:profession.extension:professionByPENSS.value[x]:valueCoding"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:profession.extension:professionByKSP.value[x]:valueCoding"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:profession.extension:stdKSPPHCM.value[x]:valueCoding"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:profession.extension:stdKSPPHCH.value[x]:valueCoding"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:profession.extension:compoundAllies.value[x]:valueCoding"
+        }
+      ],
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"
+    }
+  ]
+}

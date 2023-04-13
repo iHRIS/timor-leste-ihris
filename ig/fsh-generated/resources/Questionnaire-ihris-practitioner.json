@@ -91,8 +91,8 @@
         },
         {
           "linkId": "Practitioner.extension[0]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:residence.value[x]:valueReference",
-          "text": "Residence",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:placeOfBirth.value[x]:valueString",
+          "text": "Place Of Birth",
           "type": "reference",
           "required": false,
           "repeats": false
@@ -109,101 +109,9 @@
     {
       "linkId": "__Practitioner:contact",
       "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner",
-      "text": "Contact Details|Address, email, phone numbers",
+      "text": "Contact Details|email, phone numbers",
       "type": "group",
       "item": [
-        {
-          "linkId": "Practitioner.address[0]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.address",
-          "text": "Home Address",
-          "type": "group",
-          "item": [
-            {
-              "linkId": "Practitioner.address[0].use",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.address.use",
-              "text": "Address Use",
-              "type": "choice",
-              "required": true,
-              "repeats": false,
-              "readOnly": true,
-              "answerOption": [
-                {
-                  "valueCoding": {
-                    "code": "home",
-                    "system": "http://hl7.org/fhir/address-use"
-                  },
-                  "initialSelected": true
-                }
-              ]
-            },
-            {
-              "linkId": "Practitioner.address[0].type",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.address.type",
-              "text": "Address Type",
-              "type": "choice",
-              "required": true,
-              "repeats": false,
-              "readOnly": true,
-              "answerOption": [
-                {
-                  "valueCoding": {
-                    "code": "physical",
-                    "system": "http://hl7.org/fhir/address-type"
-                  },
-                  "initialSelected": true
-                }
-              ]
-            },
-            {
-              "linkId": "Practitioner.address[0].line",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.address.line",
-              "text": "Street Address",
-              "type": "string",
-              "required": true,
-              "repeats": true
-            },
-            {
-              "linkId": "Practitioner.address[0].city",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.address.city",
-              "text": "City",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "Practitioner.address[0].district",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.address.district",
-              "text": "District",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "Practitioner.address[0].state",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.address.state",
-              "text": "State",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "Practitioner.address[0].postalCode",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.address.postalCode",
-              "text": "Postal Code",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            },
-            {
-              "linkId": "Practitioner.address[0].country",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.address.country",
-              "text": "Country",
-              "type": "string",
-              "required": false,
-              "repeats": false
-            }
-          ]
-        },
         {
           "linkId": "Practitioner.telecom[0].use",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.telecom.use",
@@ -370,6 +278,14 @@
           "type": "reference",
           "required": true,
           "repeats": false
+        },
+        {
+          "linkId": "PractitionerRole.extension[0]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:investitureDate.value[x]:valueDateTime",
+          "text": "Investiture Date",
+          "type": "dateTime",
+          "required": false,
+          "repeats": false
         }
       ]
     },
@@ -382,23 +298,15 @@
         {
           "linkId": "Practitioner.identifier[0]",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier",
-          "text": "Employee Number",
+          "text": "PMIS",
           "type": "group",
           "repeats": false,
           "required": true,
           "item": [
             {
-              "linkId": "Practitioner.identifier[0].system",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier.system",
-              "text": "System",
-              "type": "string",
-              "repeats": false,
-              "required": true
-            },
-            {
               "linkId": "Practitioner.identifier[0].value",
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier.value",
-              "text": "Employee Number",
+              "text": "PMIS",
               "type": "string",
               "repeats": false,
               "required": true
@@ -408,44 +316,52 @@
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier.type",
               "text": "ID Type",
               "type": "choice",
-              "answerValueSet": "http://hl7.org/fhir/ValueSet/identifier-type",
               "repeats": false,
-              "required": true
+              "readOnly": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "code": "PMIS",
+                    "system": "http://ihris.org/fhir/CodeSystem/ihris-timor-identifier-codesystem"
+                  },
+                  "initialSelected": true
+                }
+              ]
             }
           ]
         },
         {
           "linkId": "Practitioner.identifier[1]",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier",
-          "text": "Identifier",
+          "text": "Payroll",
           "type": "group",
           "repeats": true,
           "required": false,
           "item": [
             {
-              "linkId": "Practitioner.identifier[0].system",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier.system",
-              "text": "System",
-              "type": "string",
-              "repeats": false,
-              "required": false
-            },
-            {
-              "linkId": "Practitioner.identifier[0].value",
+              "linkId": "Practitioner.identifier[1].value",
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier.value",
-              "text": "ID Number",
+              "text": "Payroll Number",
               "type": "string",
               "repeats": false,
               "required": false
             },
             {
-              "linkId": "Practitioner.identifier[0].type",
+              "linkId": "Practitioner.identifier[1].type",
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier.type",
               "text": "ID Type",
               "type": "choice",
-              "answerValueSet": "http://hl7.org/fhir/ValueSet/identifier-type",
               "repeats": false,
-              "required": false
+              "readOnly": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "code": "PMIS",
+                    "system": "http://ihris.org/fhir/CodeSystem/ihris-timor-identifier-codesystem"
+                  },
+                  "initialSelected": true
+                }
+              ]
             }
           ]
         }

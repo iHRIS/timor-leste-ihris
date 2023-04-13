@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisEducationBackgroundCodeSystem",
+  "id": "ihris-educational-background-codesystem",
+  "title": "Educational Background",
+  "version": "0.3.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-educational-background-codesystem",
+  "concept": [
+    {
+      "code": "D1",
+      "display": "D1",
+      "definition": "D1"
+    },
+    {
+      "code": "D2",
+      "display": "D2",
+      "definition": "D2"
+    },
+    {
+      "code": "D3",
+      "display": "D3",
+      "definition": "D3"
+    },
+    {
+      "code": "D4",
+      "display": "D4",
+      "definition": "D4"
+    },
+    {
+      "code": "S1",
+      "display": "S1",
+      "definition": "S1"
+    },
+    {
+      "code": "SD",
+      "display": "SD",
+      "definition": "SD"
+    },
+    {
+      "code": "SMA",
+      "display": "SMA",
+      "definition": "SMA"
+    },
+    {
+      "code": "SMP",
+      "display": "SMP",
+      "definition": "SMP"
+    }
+  ],
+  "date": "2020-11-11T08:41:04.362Z",
+  "count": 8
+}
