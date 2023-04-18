@@ -251,7 +251,7 @@
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.code",
           "text": "Job Title",
           "type": "choice",
-          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-job",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-job-timor",
           "required": true,
           "repeats": false
         },
@@ -281,9 +281,9 @@
         },
         {
           "linkId": "PractitionerRole.extension[0]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:investitureDate.value[x]:valueDateTime",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:investitureDate.value[x]:valueDate",
           "text": "Investiture Date",
-          "type": "dateTime",
+          "type": "date",
           "required": false,
           "repeats": false
         }

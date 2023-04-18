@@ -53,7 +53,7 @@ Title:            "iHRIS Educational Major ValueSet"
 
 CodeSystem:      IhrisPublicHealthCodeSystem
 Id:              ihris-public-health-codeSystem
-Title:           "Public Health CodeSystem"
+Title:           "Qualification of Public Health"
 * ^date = "2020-09-29T08:41:04.362Z"
 * #Saude "Saude Publika" "Saude Publika"
 * #Enfermeiro "Enfermeiro Dentaria" "Enfermeiro Dentaria"
@@ -162,7 +162,7 @@ Usage:          #example
 * extension[display].extension[search][1].valueString = "Display|display"
 * extension[display].extension[field][0].extension[path].valueString = "CodeSystem.code"
 * extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true
-* extension[section][0].extension[title].valueString = "Qualification of Public Health CodeSystem"
+* extension[section][0].extension[title].valueString = "Qualification of Public Health"
 * extension[section][0].extension[description].valueString = "Qualification of Public Health CodeSystem"
 * extension[section][0].extension[name].valueString = "CodeSystem"
 * extension[section][0].extension[field][0].valueString = "CodeSystem.display"

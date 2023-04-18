@@ -1997,11 +1997,12 @@
       {
         "id": "Practitioner.name.text",
         "path": "Practitioner.name.text",
+        "label": "Full Name",
         "short": "Text representation of the full name",
         "definition": "Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.",
         "comment": "Can provide both a text representation and parts. Applications updating a name SHALL ensure that when both text and parts are present,  no content is included in the text that isn't found in a part.",
         "requirements": "A renderable, unencoded form.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "HumanName.text",
@@ -2023,6 +2024,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "mustSupport": true,
         "isModifier": false,
         "isSummary": true,
         "mapping": [
@@ -2039,7 +2041,7 @@
       {
         "id": "Practitioner.name.family",
         "path": "Practitioner.name.family",
-        "label": "Family",
+        "label": "First Name",
         "short": "Family name (often called 'Surname')",
         "definition": "The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.",
         "comment": "Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures).",
@@ -2062,7 +2064,7 @@
           {
             "key": "ihris-name-check",
             "severity": "error",
-            "human": "Name must be only text.",
+            "human": "Family Name must be only text.",
             "expression": "matches('^[A-Za-z ]*$')",
             "xpath": "@value|f:*|h:div",
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
@@ -2089,7 +2091,7 @@
       {
         "id": "Practitioner.name.given",
         "path": "Practitioner.name.given",
-        "label": "Given Name",
+        "label": "Last Names",
         "short": "Given names (not always 'first'). Includes middle names",
         "definition": "Given name.",
         "comment": "If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren't due to paractical limitations.  This element is not called \"first name\" since given names do not always come first.",
@@ -2112,10 +2114,10 @@
         "orderMeaning": "Given Names appear in the correct order for presenting the name",
         "constraint": [
           {
-            "key": "ele-1",
+            "key": "ihris-name-check",
             "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
+            "human": "Given Name must be only text.",
+            "expression": "matches('^[A-Za-z ]*$')",
             "xpath": "@value|f:*|h:div",
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
@@ -5211,15 +5213,22 @@
         "mustSupport": true
       },
       {
+        "id": "Practitioner.name.text",
+        "path": "Practitioner.name.text",
+        "label": "Full Name",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "Practitioner.name.family",
         "path": "Practitioner.name.family",
-        "label": "Family",
+        "label": "First Name",
         "min": 1,
         "constraint": [
           {
             "key": "ihris-name-check",
             "severity": "error",
-            "human": "Name must be only text.",
+            "human": "Family Name must be only text.",
             "expression": "matches('^[A-Za-z ]*$')",
             "xpath": "@value|f:*|h:div",
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
@@ -5230,8 +5239,18 @@
       {
         "id": "Practitioner.name.given",
         "path": "Practitioner.name.given",
-        "label": "Given Name",
+        "label": "Last Names",
         "min": 1,
+        "constraint": [
+          {
+            "key": "ihris-name-check",
+            "severity": "error",
+            "human": "Given Name must be only text.",
+            "expression": "matches('^[A-Za-z ]*$')",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
         "mustSupport": true
       },
       {

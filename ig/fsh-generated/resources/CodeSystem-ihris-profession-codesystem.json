@@ -39,6 +39,11 @@
       "definition": "Chefe CS"
     },
     {
+      "code": "Dentaria",
+      "display": "Dentaria",
+      "definition": "Dentaria"
+    },
+    {
       "code": "EIS",
       "display": "EIS",
       "definition": "EIS"
@@ -149,6 +154,6 @@
       "definition": "Teknik Dentaria"
     }
   ],
-  "date": "2020-11-11T08:41:04.362Z",
-  "count": 28
+  "date": "2023-04-14T08:41:04.362Z",
+  "count": 29
 }

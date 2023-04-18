@@ -3597,7 +3597,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner"
+              "http://ihris.org/fhir/StructureDefinition/ihris-practitioner"
             ]
           }
         ],
@@ -3958,7 +3958,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://ihris.org/fhir/ValueSet/ihris-job-Timor"
+          "valueSet": "http://ihris.org/fhir/ValueSet/ihris-job-timor"
         },
         "mapping": [
           {
@@ -5505,6 +5505,14 @@
         "id": "PractitionerRole.practitioner",
         "path": "PractitionerRole.practitioner",
         "label": "Health Worker",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-practitioner"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -5521,7 +5529,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://ihris.org/fhir/ValueSet/ihris-job-Timor"
+          "valueSet": "http://ihris.org/fhir/ValueSet/ihris-job-timor"
         }
       },
       {

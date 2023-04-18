@@ -859,7 +859,7 @@
                 },
                 {
                   "url": "field",
-                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-employment-history').extension.where(url='profession').valueCoding.display"
+                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='profession').valueCoding.display"
                 }
               ]
             },
@@ -875,7 +875,7 @@
                 },
                 {
                   "url": "field",
-                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-employment-history').extension.where(url='professionByPENSS').valueCoding.display"
+                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='professionByPENSS').valueCoding.display"
                 }
               ],
               "url": "column"
@@ -888,7 +888,7 @@
                 },
                 {
                   "url": "field",
-                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-employment-history').extension.where(url='professionByKSP').valueCoding.display"
+                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='professionByKSP').valueCoding.display"
                 }
               ],
               "url": "column"
@@ -901,7 +901,7 @@
                 },
                 {
                   "url": "field",
-                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-employment-history').extension.where(url='stdKSPPHCM').valueCoding.display"
+                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='stdKSPPHCM').valueCoding.display"
                 }
               ],
               "url": "column"
@@ -914,7 +914,7 @@
                 },
                 {
                   "url": "field",
-                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-employment-history').extension.where(url='stdKSPPHCH').valueCoding.display"
+                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='stdKSPPHCH').valueCoding.display"
                 }
               ],
               "url": "column"
@@ -927,7 +927,7 @@
                 },
                 {
                   "url": "field",
-                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-employment-history').extension.where(url='compoundAllies').valueCoding.display"
+                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='compoundAllies').valueCoding.display"
                 }
               ],
               "url": "column"
@@ -949,7 +949,7 @@
               "extension": [
                 {
                   "url": "link",
-                  "valueString": "/questionnaire/ihris-employment-history/employment-history?practitioner=FHIRID"
+                  "valueString": "/questionnaire/ihris-profession/profession?practitioner=FHIRID"
                 },
                 {
                   "url": "text",
@@ -974,7 +974,7 @@
               "extension": [
                 {
                   "url": "link",
-                  "valueString": "/resource/view/employment-history/ITEMID"
+                  "valueString": "/resource/view/profession/ITEMID"
                 },
                 {
                   "url": "text",

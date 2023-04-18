@@ -4,7 +4,7 @@
   "content": "complete",
   "name": "IhrisPublicHealthCodeSystem",
   "id": "ihris-public-health-codeSystem",
-  "title": "Public Health CodeSystem",
+  "title": "Qualification of Public Health",
   "version": "0.1.0",
   "url": "http://ihris.org/fhir/CodeSystem/ihris-public-health-codeSystem",
   "concept": [

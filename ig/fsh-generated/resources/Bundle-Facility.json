@@ -1,0 +1,1393 @@
+{
+  "resourceType": "Bundle",
+  "id": "Facility",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F1",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Aileu",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F2",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Aileu Vila",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F3",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Aileu Vila-Klinik Uma Ita nian",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F4",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Aileu Vila-PS Daisoli",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F5",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Aileu Vila-PS Liurai",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F6",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Aileu Vila-PS Maurusa",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F6"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F7",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Aileu Vila-PS Rairema",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F7"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F8",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Aileu Vila-PS Saboria",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F8"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F9",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Aileu Vila-PS Seloi Kraik",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F9"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F10",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Aileu Vila-PS Suku Liurai",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F10"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F11",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Aileu Vila-PT Mantane",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F11"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F12",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Aileu Vila-PT Hatulai",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F12"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F13",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Laulara",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F13"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F14",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Laulara-PS Bocolero",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F14"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F15",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Laulara-PS Fatisi",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F15"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F16",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Laulara-PS Madabeno",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F16"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F17",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Laulara-PS Talitu",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F17"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F18",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Laulara-PS Tohumeta",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F18"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F19",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Lequidoe",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F19"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F20",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Lequidoe-PS Bereleu",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F20"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F21",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Lequidoe-PS Fahisoi",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F21"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F22",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Liquidoe",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F22"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F23",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Remexio",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F23"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F24",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Remexio-PS Bereliurai",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F24"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F25",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Remexio-PS Fadabloko",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F25"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F26",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Remexio-PS Faturasa",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F26"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F27",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Remexio-PS Hautoho",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F27"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F28",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Remexio-PS Laulara",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F28"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F29",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Remexio-PS Maumeta",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F29"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F30",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Remexio-PS Suku Liurai",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F30"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F31",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Remexio-PS Tulataqueu",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F31"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F32",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "CS Remixio-PS Bereliurai",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F32"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "TL.M6.F33",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "name": "SMS Aileu",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TL.M6"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "urn:ihe:iti:mcsd:2019:facility",
+                "system": "urn:ietf:rfc:3986"
+              }
+            ],
+            "text": "Facility"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu",
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TL.M6.F33"
+      }
+    }
+  ]
+}

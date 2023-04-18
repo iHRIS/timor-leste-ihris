@@ -821,7 +821,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ihris-job-Timor"
+          "reference": "ValueSet/ihris-job-timor"
         },
         "name": "iHRIS Job Title Value Set",
         "description": "iHRIS ValueSet for: iHRISJobTimor",
@@ -1219,7 +1219,7 @@
         "reference": {
           "reference": "CodeSystem/ihris-public-health-codeSystem"
         },
-        "name": "Public Health CodeSystem",
+        "name": "Qualification of Public Health",
         "exampleBoolean": false
       },
       {
@@ -1399,6 +1399,13 @@
           "reference": "Bundle/Country"
         },
         "name": "Country",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/Facility"
+        },
+        "name": "Facility",
         "exampleBoolean": true
       },
       {

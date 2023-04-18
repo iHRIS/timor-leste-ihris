@@ -168,7 +168,7 @@ Usage:          #definition
 * item[2].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.code"
 * item[2].item[1].text = "Job Title"
 * item[2].item[1].type = #choice
-* item[2].item[1].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-job"
+* item[2].item[1].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-job-timor"
 * item[2].item[1].required = true
 * item[2].item[1].repeats = false
 
@@ -194,9 +194,9 @@ Usage:          #definition
 * item[2].item[4].repeats = false
 
 * item[2].item[5].linkId = "PractitionerRole.extension[0]"
-* item[2].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:investitureDate.value[x]:valueDateTime"
+* item[2].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:investitureDate.value[x]:valueDate"
 * item[2].item[5].text = "Investiture Date"
-* item[2].item[5].type = #dateTime
+* item[2].item[5].type = #date
 * item[2].item[5].required = false
 * item[2].item[5].repeats = false
 

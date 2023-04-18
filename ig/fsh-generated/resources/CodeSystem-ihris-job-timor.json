@@ -5,7 +5,7 @@
   "name": "IhrisJobTimorCodeSystem",
   "id": "ihris-job-timor",
   "title": "iHRIS Job Title Code System for Timor-Leste",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "url": "http://ihris.org/fhir/CodeSystem/ihris-job-timor",
   "concept": [
     {
@@ -225,8 +225,8 @@
     },
     {
       "code": "Seguranca",
-      "display": "Seguranca ",
-      "definition": "Seguranca "
+      "display": "Seguranca",
+      "definition": "Seguranca"
     },
     {
       "code": "TecAdministrativo",
@@ -234,5 +234,6 @@
       "definition": "Tec Administrativo"
     }
   ],
+  "date": "2023-04-14T08:41:04.362Z",
   "count": 45
 }

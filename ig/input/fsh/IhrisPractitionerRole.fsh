@@ -35,6 +35,7 @@ Description:    "iHRIS profile of Practitioner Role."
 * practitioner 0..1 MS
 * practitioner ^label = "Health Worker"
 * practitioner.reference ^label = "Health Worker"
+* practitioner only Reference(IhrisPractitioner)
 * code 1..1 MS
 * code ^label = "Job"
 * code from IhrisJobTimorValueset (required)
@@ -266,7 +267,7 @@ InstanceOf:     IhrisPage
 Title:          "iHRIS Regime Grade CodeSystem Page"
 Usage:          #example
 * code = IhrisResourceCodeSystem#page
-* extension[display].extension[resource].valueReference = Reference(CodeSystem/ihris-reason-departure-codesystem)
+* extension[display].extension[resource].valueReference = Reference(CodeSystem/ihris-regime-grade-codesystem)
 * extension[display].extension[search][0].valueString = "Code|code"
 * extension[display].extension[search][1].valueString = "Display|display"
 * extension[display].extension[field][0].extension[path].valueString = "CodeSystem.code"
@@ -486,14 +487,18 @@ Usage:          #definition
 
 
 ValueSet:         IhrisJobTimorValueset
-Id:               ihris-job-Timor
+Id:               ihris-job-timor
 Title:            "iHRIS Job Title Value Set"
 Description:      "iHRIS ValueSet for: iHRISJobTimor"
+* ^date = "2023-04-14T08:41:04.362Z"
+* ^version = "0.3.0"
 * codes from system IhrisJobTimorCodeSystem
 
 CodeSystem:      IhrisJobTimorCodeSystem
 Id:              ihris-job-timor
 Title:           "iHRIS Job Title Code System for Timor-Leste"
+* ^date = "2023-04-14T08:41:04.362Z"
+* ^version = "0.3.0"
 * #Analista	"Analista"	"Analista"
 * #Aliados	"Aliados"	"Aliados"
 * #Ambiental	"Ambiental"	"Ambiental"
@@ -537,7 +542,7 @@ Title:           "iHRIS Job Title Code System for Timor-Leste"
 * #Radiologia	"Radiologia"	"Radiologia"
 * #ResponsavelProgramTB	"Responsavel Program TB"	"Responsavel Program TB"
 * #ResponsavelSIS-VE	"Responsavel SIS-VE"	"Responsavel SIS-VE"
-* #Seguranca	"Seguranca "	"Seguranca "
+* #Seguranca	"Seguranca"	"Seguranca"
 * #TecAdministrativo	"Tec Administrativo"	"Tec Administrativo"
 
 CodeSystem:      IhrisReasonDepartureCodeSystem

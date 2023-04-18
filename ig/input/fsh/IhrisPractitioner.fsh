@@ -30,13 +30,23 @@ Description:    "iHRIS profile of Practitioner."
 * name.use MS
 * name.use ^label = "Use"
 * name.family 1..1 MS
-* name.family ^label = "Family"
+* name.family ^label = "First Name"
 * name.family ^constraint[0].key = "ihris-name-check"
 * name.family ^constraint[0].severity = #error
 * name.family ^constraint[0].expression = "matches('^[A-Za-z ]*$')"
-* name.family ^constraint[0].human = "Name must be only text."
+* name.family ^constraint[0].human = "Family Name must be only text."
 * name.given 1..* MS
-* name.given ^label = "Given Name"
+* name.given ^label = "Last Names"
+* name.given ^constraint[0].key = "ihris-name-check"
+* name.given ^constraint[0].severity = #error
+* name.given ^constraint[0].expression = "matches('^[A-Za-z ]*$')"
+* name.given ^constraint[0].human = "Given Name must be only text."
+* name.text 1..1 MS
+* name.text ^label = "Full Name"
+* name.family ^constraint[0].key = "ihris-name-check"
+* name.family ^constraint[0].severity = #error
+* name.family ^constraint[0].expression = "matches('^[A-Za-z ]*$')"
+* name.family ^constraint[0].human = "Family Name must be only text."
 * name.prefix MS
 * name.prefix ^label = "Prefix"
 * name.suffix MS

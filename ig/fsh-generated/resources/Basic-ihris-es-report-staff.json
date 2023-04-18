@@ -42,11 +42,11 @@
             },
             {
               "url": "name",
-              "valueString": "identifier.where(type.coding.where(code='NationalID' or code='Passport' or code='employeeId')).value"
+              "valueString": "identifier.where(type.coding.where(code='PMIS')).value"
             },
             {
               "url": "display",
-              "valueString": "Identifier(NID/PP/EmpID)"
+              "valueString": "PMIS"
             },
             {
               "url": "filter",
@@ -63,40 +63,15 @@
           "extension": [
             {
               "url": "label",
-              "valueString": "prefix"
+              "valueString": "payroll"
             },
             {
               "url": "name",
-              "valueString": "name.prefix"
+              "valueString": "identifier.where(type.coding.where(code='PAYROLL')).value"
             },
             {
               "url": "display",
-              "valueString": "Prefix"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": true
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": false
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        },
-        {
-          "extension": [
-            {
-              "url": "label",
-              "valueString": "given"
-            },
-            {
-              "url": "name",
-              "valueString": "name.where(use='official').first().given"
-            },
-            {
-              "url": "display",
-              "valueString": "Given name"
+              "valueString": "Payroll"
             },
             {
               "url": "filter",
@@ -118,6 +93,31 @@
             {
               "url": "name",
               "valueString": "name.where(use='official').family"
+            },
+            {
+              "url": "display",
+              "valueString": "Given name"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": false
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        },
+        {
+          "extension": [
+            {
+              "url": "label",
+              "valueString": "given"
+            },
+            {
+              "url": "name",
+              "valueString": "name.where(use='official').first().given"
             },
             {
               "url": "display",
@@ -188,90 +188,15 @@
           "extension": [
             {
               "url": "label",
-              "valueString": "residence"
+              "valueString": "placeOfBirth"
             },
             {
               "url": "name",
-              "valueString": "Practitioner.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-residence').valueReference.reference"
+              "valueString": "Practitioner.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-placeOfBirth').valueString"
             },
             {
               "url": "display",
-              "valueString": "Residence"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": true
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": true
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        },
-        {
-          "extension": [
-            {
-              "url": "label",
-              "valueString": "nationality"
-            },
-            {
-              "url": "name",
-              "valueString": "Practitioner.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-nationality').valueCoding.display"
-            },
-            {
-              "url": "display",
-              "valueString": "Citizenship"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": true
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": true
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        },
-        {
-          "extension": [
-            {
-              "url": "label",
-              "valueString": "phone"
-            },
-            {
-              "url": "name",
-              "valueString": "Practitioner.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-phone').valueString"
-            },
-            {
-              "url": "display",
-              "valueString": "Phone Number"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": false
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": false
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        },
-        {
-          "extension": [
-            {
-              "url": "label",
-              "valueString": "martialStatus"
-            },
-            {
-              "url": "name",
-              "valueString": "Practitioner.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-marital-status').valueCoding.display"
-            },
-            {
-              "url": "display",
-              "valueString": "Marital Status"
+              "valueString": "Place of Birth"
             },
             {
               "url": "filter",
@@ -412,15 +337,140 @@
           "extension": [
             {
               "url": "label",
-              "valueString": "speciality"
+              "valueString": "investitureDate"
             },
             {
               "url": "name",
-              "valueString": "speciality.coding.display"
+              "valueString": "PractitionerRole.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-investiture-Date').valueDate"
             },
             {
               "url": "display",
-              "valueString": "`speciality"
+              "valueString": "Investiture Date"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": false
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        },
+        {
+          "extension": [
+            {
+              "url": "label",
+              "valueString": "salary"
+            },
+            {
+              "url": "name",
+              "valueString": "PractitionerRole.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-salary').valueMoney.value"
+            },
+            {
+              "url": "display",
+              "valueString": "Salary"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": false
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        },
+        {
+          "extension": [
+            {
+              "url": "label",
+              "valueString": "scale"
+            },
+            {
+              "url": "name",
+              "valueString": "PractitionerRole.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-scale').valueString"
+            },
+            {
+              "url": "display",
+              "valueString": "Scale"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        },
+        {
+          "extension": [
+            {
+              "url": "label",
+              "valueString": "grade"
+            },
+            {
+              "url": "name",
+              "valueString": "PractitionerRole.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-grade').valueString"
+            },
+            {
+              "url": "display",
+              "valueString": "Grade"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        },
+        {
+          "extension": [
+            {
+              "url": "label",
+              "valueString": "regime"
+            },
+            {
+              "url": "name",
+              "valueString": "PractitionerRole.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-regime').valueCoding.display"
+            },
+            {
+              "url": "display",
+              "valueString": "Regime"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        },
+        {
+          "extension": [
+            {
+              "url": "label",
+              "valueString": "regimeGrade"
+            },
+            {
+              "url": "name",
+              "valueString": "PractitionerRole.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-regime-grade').valueCoding.display"
+            },
+            {
+              "url": "display",
+              "valueString": "Regime Grade"
             },
             {
               "url": "filter",
@@ -470,7 +520,7 @@
             },
             {
               "url": "display",
-              "valueString": "Facility/Place of work"
+              "valueString": "WorkPlace"
             },
             {
               "url": "filter",
