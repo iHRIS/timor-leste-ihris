@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2023-04-18T17:07:31.310Z",
+        "when": "2023-04-19T10:13:55.273Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "OaTHWT3MxDFV7jN0m/fV3YQ7t/2d1lq27b5TA5K/dpoBiMPjHOz7z9zyOQIUcl2T59Up8Wm4GonmphfzctDVohrnrHYSKfPkktb3SYGJvrXSSYp0QeGj/j3dE+jw4CVhIUteSZOzJ0/BMl/tRsFusuIOKP+1SwzyWTIbbcLdw0M="
+        "data": "itAaXDZZxNd8FtduS8gqsLH/DitjSz6W8BkFka2LBCEj/uw2utVmS3mh6+r+LlGHqcqrrMGghIdOjIoOpZExJdvjMZfjC8c2O2BbmYPRnxl+EUR+NZzijYiA6xP0uIJ0Bk/WcWQ0m8NVkT0KEQSzFtR43ThPUzHkPhK+bjOftHE="
       }
     },
     {
@@ -368,7 +368,7 @@
         },
         {
           "name": "site:nav:menu:reports:menu:staff:order",
-          "valueString": "1"
+          "valueString": "0"
         },
         {
           "name": "site:nav:menu:reports:menu:profession:text",
@@ -380,6 +380,18 @@
         },
         {
           "name": "site:nav:menu:reports:menu:profession:order",
+          "valueString": "1"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:qualification:text",
+          "valueString": "Staff By Qualification"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:qualification:url",
+          "valueString": "/report/ihris-es-report-qualification"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:qualification:order",
           "valueString": "2"
         },
         {

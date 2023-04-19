@@ -1557,6 +1557,13 @@
       },
       {
         "reference": {
+          "reference": "Basic/ihris-es-report-qualification"
+        },
+        "name": "Staff Relationship",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/iHRISRelationship"
+      },
+      {
+        "reference": {
           "reference": "Basic/ihris-es-report-staff"
         },
         "name": "Staff Relationship",

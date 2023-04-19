@@ -1,4 +1,4 @@
-Instance:       ihris-es-report-staff
+Instance:       ihris-es-report-qualification
 InstanceOf:     IhrisRelationship
 Title:          "Staff Relationship"
 Usage:          #example
@@ -6,8 +6,8 @@ Usage:          #example
 * code.text = "iHRISRelationship"
 * code.coding = #iHRISRelationship
 * subject.reference = "StructureDefinition/ihris-practitioner"
-* extension[reportdetails].extension[name].valueString = "practitioner"
-* extension[reportdetails].extension[label].valueString = "Staff Report"
+* extension[reportdetails].extension[name].valueString = "practitioner-qualification"
+* extension[reportdetails].extension[label].valueString = "Staff By qualification Report"
 * extension[reportdetails].extension[resource].valueString = "Practitioner"
 * extension[reportdetails].extension[query].valueString = "active=true"
 * extension[reportdetails].extension[displayCheckbox].valueBoolean = true
@@ -56,17 +56,13 @@ Usage:          #example
 
 * extension[reportdetails].extension[reportelement][5].extension[label].valueString = "birthDate"
 * extension[reportdetails].extension[reportelement][5].extension[name].valueString = "birthDate"
-* extension[reportdetails].extension[reportelement][5].extension[display].valueString = "BirthDate"
 * extension[reportdetails].extension[reportelement][5].extension[filter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][5].extension[dropDownFilter].valueBoolean = false
-* extension[reportdetails].extension[reportelement][5].extension[order].valueInteger = 5
 
 * extension[reportdetails].extension[reportelement][6].extension[label].valueString = "placeOfBirth"
 * extension[reportdetails].extension[reportelement][6].extension[name].valueString = "Practitioner.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-placeOfBirth').valueString"
-* extension[reportdetails].extension[reportelement][6].extension[display].valueString = "Place of Birth"
 * extension[reportdetails].extension[reportelement][6].extension[filter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][6].extension[dropDownFilter].valueBoolean = true
-* extension[reportdetails].extension[reportelement][6].extension[order].valueInteger = 6
 
 /* extension[reportdetails].extension[reportelement][7].extension[label].valueString = "nationality"
 * extension[reportdetails].extension[reportelement][7].extension[name].valueString = "Practitioner.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-nationality').valueCoding.display"
@@ -103,63 +99,56 @@ Usage:          #example
 * extension[reportlink][0].extension[reportelement][0].extension[display].valueString = "Job Title"
 * extension[reportlink][0].extension[reportelement][0].extension[filter].valueBoolean = true
 * extension[reportlink][0].extension[reportelement][0].extension[dropDownFilter].valueBoolean = true
-* extension[reportlink][0].extension[reportelement][0].extension[order].valueInteger = 8
+* extension[reportlink][0].extension[reportelement][0].extension[order].valueInteger = 6
 
 * extension[reportlink][0].extension[reportelement][1].extension[label].valueString = "startDate"
 * extension[reportlink][0].extension[reportelement][1].extension[name].valueString = "period.start"
 * extension[reportlink][0].extension[reportelement][1].extension[display].valueString = "Start Date"
 * extension[reportlink][0].extension[reportelement][1].extension[filter].valueBoolean = true
 * extension[reportlink][0].extension[reportelement][1].extension[dropDownFilter].valueBoolean = false
-* extension[reportlink][0].extension[reportelement][1].extension[order].valueInteger = 9
+* extension[reportlink][0].extension[reportelement][1].extension[order].valueInteger = 7
 
-* extension[reportlink][0].extension[reportelement][2].extension[label].valueString = "endDate"
-* extension[reportlink][0].extension[reportelement][2].extension[name].valueString = "period.end"
-* extension[reportlink][0].extension[reportelement][2].extension[display].valueString = "End Date"
+* extension[reportlink][0].extension[reportelement][2].extension[label].valueString = "investitureDate"
+* extension[reportlink][0].extension[reportelement][2].extension[name].valueString = "PractitionerRole.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-investiture-Date').valueDate"
+* extension[reportlink][0].extension[reportelement][2].extension[display].valueString = "Investiture Date"
 * extension[reportlink][0].extension[reportelement][2].extension[filter].valueBoolean = true
 * extension[reportlink][0].extension[reportelement][2].extension[dropDownFilter].valueBoolean = false
-* extension[reportlink][0].extension[reportelement][2].extension[order].valueInteger = 11
+* extension[reportlink][0].extension[reportelement][2].extension[order].valueInteger = 8
 
-* extension[reportlink][0].extension[reportelement][3].extension[label].valueString = "investitureDate"
-* extension[reportlink][0].extension[reportelement][3].extension[name].valueString = "PractitionerRole.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-investiture-Date').valueDate"
-* extension[reportlink][0].extension[reportelement][3].extension[display].valueString = "Investiture Date"
+* extension[reportlink][0].extension[reportelement][3].extension[label].valueString = "salary"
+* extension[reportlink][0].extension[reportelement][3].extension[name].valueString = "PractitionerRole.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-salary').valueMoney.value"
+* extension[reportlink][0].extension[reportelement][3].extension[display].valueString = "Salary"
 * extension[reportlink][0].extension[reportelement][3].extension[filter].valueBoolean = true
 * extension[reportlink][0].extension[reportelement][3].extension[dropDownFilter].valueBoolean = false
-* extension[reportlink][0].extension[reportelement][3].extension[order].valueInteger = 10
+* extension[reportlink][0].extension[reportelement][3].extension[order].valueInteger = 9
 
-* extension[reportlink][0].extension[reportelement][4].extension[label].valueString = "salary"
-* extension[reportlink][0].extension[reportelement][4].extension[name].valueString = "PractitionerRole.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-salary').valueMoney.value"
-* extension[reportlink][0].extension[reportelement][4].extension[display].valueString = "Salary"
+* extension[reportlink][0].extension[reportelement][4].extension[label].valueString = "scale"
+* extension[reportlink][0].extension[reportelement][4].extension[name].valueString = "PractitionerRole.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-scale').valueString"
+* extension[reportlink][0].extension[reportelement][4].extension[display].valueString = "Scale"
 * extension[reportlink][0].extension[reportelement][4].extension[filter].valueBoolean = true
-* extension[reportlink][0].extension[reportelement][4].extension[dropDownFilter].valueBoolean = false
-* extension[reportlink][0].extension[reportelement][4].extension[order].valueInteger = 12
+* extension[reportlink][0].extension[reportelement][4].extension[dropDownFilter].valueBoolean = true
+* extension[reportlink][0].extension[reportelement][4].extension[order].valueInteger = 10
 
-* extension[reportlink][0].extension[reportelement][5].extension[label].valueString = "scale"
-* extension[reportlink][0].extension[reportelement][5].extension[name].valueString = "PractitionerRole.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-scale').valueString"
-* extension[reportlink][0].extension[reportelement][5].extension[display].valueString = "Scale"
+* extension[reportlink][0].extension[reportelement][5].extension[label].valueString = "grade"
+* extension[reportlink][0].extension[reportelement][5].extension[name].valueString = "PractitionerRole.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-grade').valueString"
+* extension[reportlink][0].extension[reportelement][5].extension[display].valueString = "Grade"
 * extension[reportlink][0].extension[reportelement][5].extension[filter].valueBoolean = true
 * extension[reportlink][0].extension[reportelement][5].extension[dropDownFilter].valueBoolean = true
-* extension[reportlink][0].extension[reportelement][5].extension[order].valueInteger = 13
+* extension[reportlink][0].extension[reportelement][5].extension[order].valueInteger = 11
 
-* extension[reportlink][0].extension[reportelement][6].extension[label].valueString = "grade"
-* extension[reportlink][0].extension[reportelement][6].extension[name].valueString = "PractitionerRole.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-grade').valueString"
-* extension[reportlink][0].extension[reportelement][6].extension[display].valueString = "Grade"
+* extension[reportlink][0].extension[reportelement][6].extension[label].valueString = "regime"
+* extension[reportlink][0].extension[reportelement][6].extension[name].valueString = "PractitionerRole.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-regime').valueCoding.display"
+* extension[reportlink][0].extension[reportelement][6].extension[display].valueString = "Regime"
 * extension[reportlink][0].extension[reportelement][6].extension[filter].valueBoolean = true
 * extension[reportlink][0].extension[reportelement][6].extension[dropDownFilter].valueBoolean = true
-* extension[reportlink][0].extension[reportelement][6].extension[order].valueInteger = 14
+* extension[reportlink][0].extension[reportelement][6].extension[order].valueInteger = 12
 
-* extension[reportlink][0].extension[reportelement][7].extension[label].valueString = "regime"
-* extension[reportlink][0].extension[reportelement][7].extension[name].valueString = "PractitionerRole.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-regime').valueCoding.display"
-* extension[reportlink][0].extension[reportelement][7].extension[display].valueString = "Regime"
+* extension[reportlink][0].extension[reportelement][7].extension[label].valueString = "regimeGrade"
+* extension[reportlink][0].extension[reportelement][7].extension[name].valueString = "PractitionerRole.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-regime-grade').valueCoding.display"
+* extension[reportlink][0].extension[reportelement][7].extension[display].valueString = "Regime Grade"
 * extension[reportlink][0].extension[reportelement][7].extension[filter].valueBoolean = true
 * extension[reportlink][0].extension[reportelement][7].extension[dropDownFilter].valueBoolean = true
-* extension[reportlink][0].extension[reportelement][7].extension[order].valueInteger = 15
-
-* extension[reportlink][0].extension[reportelement][8].extension[label].valueString = "regimeGrade"
-* extension[reportlink][0].extension[reportelement][8].extension[name].valueString = "PractitionerRole.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-regime-grade').valueCoding.display"
-* extension[reportlink][0].extension[reportelement][8].extension[display].valueString = "Regime Grade"
-* extension[reportlink][0].extension[reportelement][8].extension[filter].valueBoolean = true
-* extension[reportlink][0].extension[reportelement][8].extension[dropDownFilter].valueBoolean = true
-* extension[reportlink][0].extension[reportelement][8].extension[order].valueInteger = 16
+* extension[reportlink][0].extension[reportelement][7].extension[order].valueInteger = 13
 
 * extension[reportlink][1].extension[name].valueString = "facility"
 * extension[reportlink][1].extension[resource].valueString = "Location"
@@ -171,4 +160,31 @@ Usage:          #example
 * extension[reportlink][1].extension[reportelement][0].extension[display].valueString = "WorkPlace"
 * extension[reportlink][1].extension[reportelement][0].extension[filter].valueBoolean = true
 * extension[reportlink][1].extension[reportelement][0].extension[dropDownFilter].valueBoolean = true
-* extension[reportlink][1].extension[reportelement][0].extension[order].valueInteger = 7
+* extension[reportlink][1].extension[reportelement][0].extension[order].valueInteger = 5
+
+* extension[reportlink][2].extension[name].valueString = "qualification"
+* extension[reportlink][2].extension[resource].valueString = "Basic"
+* extension[reportlink][2].extension[linkElement].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+* extension[reportlink][2].extension[linkTo].valueString = "practitioner"
+* extension[reportlink][2].extension[linkElementSearchParameter].valueString = "practitioner"
+* extension[reportlink][2].extension[multiple].valueBoolean = false
+* extension[reportlink][2].extension[reportelement][0].extension[label].valueString = "level"
+* extension[reportlink][2].extension[reportelement][0].extension[name].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-education-history').extension.where(url='level').valueCoding.display"
+* extension[reportlink][2].extension[reportelement][0].extension[display].valueString = "Educational Background"
+* extension[reportlink][2].extension[reportelement][0].extension[filter].valueBoolean = true
+* extension[reportlink][2].extension[reportelement][0].extension[dropDownFilter].valueBoolean = true
+* extension[reportlink][2].extension[reportelement][0].extension[order].valueInteger = 14
+
+* extension[reportlink][2].extension[reportelement][1].extension[label].valueString = "publicHealth"
+* extension[reportlink][2].extension[reportelement][1].extension[name].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-education-history').extension.where(url='publicHealth').valueCoding.display"
+* extension[reportlink][2].extension[reportelement][1].extension[display].valueString = "Qualification of Public Health"
+* extension[reportlink][2].extension[reportelement][1].extension[filter].valueBoolean = true
+* extension[reportlink][2].extension[reportelement][1].extension[dropDownFilter].valueBoolean = true
+* extension[reportlink][2].extension[reportelement][1].extension[order].valueInteger = 15
+
+* extension[reportlink][2].extension[reportelement][2].extension[label].valueString = "literary"
+* extension[reportlink][2].extension[reportelement][2].extension[name].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-education-history').extension.where(url='literary').valueString"
+* extension[reportlink][2].extension[reportelement][2].extension[display].valueString = "Qualification of Literary"
+* extension[reportlink][2].extension[reportelement][2].extension[filter].valueBoolean = true
+* extension[reportlink][2].extension[reportelement][2].extension[dropDownFilter].valueBoolean = true
+* extension[reportlink][2].extension[reportelement][2].extension[order].valueInteger = 16
