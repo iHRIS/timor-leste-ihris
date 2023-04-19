@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2023-04-18T15:37:29.995Z",
+        "when": "2023-04-18T17:07:31.310Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "nYhJuCuEkP2Tnl6lLpRvQPZ49kZ6d9+7Hxdse9dy4hofIdihnjVg31G11bN1j0JnRc8JPudvkNDOEUW/+d+wz7I/ESsEvt3bJPi66PDUovkPJU7AqCfbbA17MGbcrfHd9Uf+7nTfMRPC3/yR6fQJukYMhWMJWSNfr8Ejh+NNnP0="
+        "data": "OaTHWT3MxDFV7jN0m/fV3YQ7t/2d1lq27b5TA5K/dpoBiMPjHOz7z9zyOQIUcl2T59Up8Wm4GonmphfzctDVohrnrHYSKfPkktb3SYGJvrXSSYp0QeGj/j3dE+jw4CVhIUteSZOzJ0/BMl/tRsFusuIOKP+1SwzyWTIbbcLdw0M="
       }
     },
     {
@@ -369,6 +369,18 @@
         {
           "name": "site:nav:menu:reports:menu:staff:order",
           "valueString": "1"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:profession:text",
+          "valueString": "Staff By Profession"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:profession:url",
+          "valueString": "/report/ihris-es-report-profession"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:profession:order",
+          "valueString": "2"
         },
         {
           "name": "site:nav:menu:users:text",

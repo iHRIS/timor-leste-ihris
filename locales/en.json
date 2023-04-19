@@ -53,7 +53,13 @@
       "User Role Tasks": "User Role Tasks",
       "Audit Logs": "Audit Logs",
       "Change Password": "Change Password",
-      "Apps": "Apps"
+      "Apps": "Apps",
+      "Staff By Profession": "Staff By Profession",
+      "Profession": "Profession",
+      "Regime": "Regime",
+      "Regime Grade": "Regime Grade",
+      "Education Background": "Education Background",
+      "Qualification of Public Health": "Qualification of Public Health"
     },
     "ihris-codesystem": {},
     "ihris-search": {},
@@ -460,7 +466,8 @@
       "You have logged out.": "You have logged out",
       "You have been logged out due to inactivity": "You have been logged out due to inactivity",
       "Export": "Export",
-      "Customize Report": "Customize Report"
+      "Customize Report": "Customize Report",
+      "what_is_ihris": "iHRIS is IntraHealth International's free, open source software that helps countries around the world track and manage their health workforce data to improve access to services. Countries use it to capture and maintain high-quality information for health workforce planning, management, regulation, and training."
     }
   }
 }
