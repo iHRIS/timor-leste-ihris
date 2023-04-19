@@ -1552,14 +1552,14 @@
         "reference": {
           "reference": "Basic/ihris-es-report-profession"
         },
-        "name": "Staff Relationship",
+        "name": "Staff Relationship By Profession",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/iHRISRelationship"
       },
       {
         "reference": {
           "reference": "Basic/ihris-es-report-qualification"
         },
-        "name": "Staff Relationship",
+        "name": "Staff Relationship By Qualification",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/iHRISRelationship"
       },
       {

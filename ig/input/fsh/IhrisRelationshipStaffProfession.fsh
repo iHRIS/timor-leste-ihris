@@ -1,12 +1,12 @@
 Instance:       ihris-es-report-profession
 InstanceOf:     IhrisRelationship
-Title:          "Staff Relationship"
+Title:          "Staff Relationship By Profession"
 Usage:          #example
 
 * code.text = "iHRISRelationship"
 * code.coding = #iHRISRelationship
 * subject.reference = "StructureDefinition/ihris-practitioner"
-* extension[reportdetails].extension[name].valueString = "practitioner-profession"
+* extension[reportdetails].extension[name].valueString = "practitionerProfession"
 * extension[reportdetails].extension[label].valueString = "Staff By Profession Report"
 * extension[reportdetails].extension[resource].valueString = "Practitioner"
 * extension[reportdetails].extension[query].valueString = "active=true"

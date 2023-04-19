@@ -89,7 +89,7 @@ Usage: #example
 * parameter[=].part[+].name = "site:nav:menu:dashboard:icon"
 * parameter[=].part[=].valueString = "mdi-chart-arc"
 * parameter[=].part[+].name = "site:nav:menu:dashboard:url"
-* parameter[=].part[=].valueString = "/ihrisapp/ihris-dashboard/index.html#/dashBuilder"
+* parameter[=].part[=].valueString = "/ihrisapp/ihris-dashboard/index.html#/dashBuilder/1942"
 * parameter[=].part[+].name = "site:nav:active"
 * parameter[=].part[=].valueString = "person"
 * parameter[=].part[+].name = "site:nav:menu:person:text"
