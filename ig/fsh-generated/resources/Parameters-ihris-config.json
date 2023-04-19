@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2023-04-19T10:13:55.273Z",
+        "when": "2023-04-19T10:45:27.047Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "itAaXDZZxNd8FtduS8gqsLH/DitjSz6W8BkFka2LBCEj/uw2utVmS3mh6+r+LlGHqcqrrMGghIdOjIoOpZExJdvjMZfjC8c2O2BbmYPRnxl+EUR+NZzijYiA6xP0uIJ0Bk/WcWQ0m8NVkT0KEQSzFtR43ThPUzHkPhK+bjOftHE="
+        "data": "mLW3nMtihZHHSzpdwN3M14vm3QeyyNaGhav3deKNvtt0EFPPbpbnYynYxc4uhZxNpBSw/mjeNj8QrN5SvPOwIG3K0jmQnM/Q8iXL0jUl9VEZSNzPzUzS9PdxnD2PKnL6wcSrPaRs8T2066M8MowEAu4VRz+T1p6czQFraa3XQic="
       }
     },
     {
@@ -463,20 +463,20 @@
           "valueString": "/questionnaire/ihris-change-password/person"
         },
         {
-          "name": "site:nav:menu:apps:text",
+          "name": "site:nav:menu:ihris-apps-list:text",
           "valueString": "Apps"
         },
         {
-          "name": "site:nav:menu:apps:order",
+          "name": "site:nav:menu:ihris-apps-list:order",
           "valueString": "12"
         },
         {
-          "name": "site:nav:menu:apps:icon",
+          "name": "site:nav:menu:ihris-apps-list:icon",
           "valueString": "mdi-apps"
         },
         {
-          "name": "site:nav:menu:apps:url",
-          "valueString": "/apps"
+          "name": "site:nav:menu:ihris-apps-list:url",
+          "valueString": "/ihris-apps-list"
         },
         {
           "name": "shortname:Practitioner:format",
