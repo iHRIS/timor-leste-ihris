@@ -12,19 +12,19 @@
       "extension": [
         {
           "url": "name",
-          "valueString": "practitionerQualification"
+          "valueString": "qualification"
         },
         {
           "url": "label",
-          "valueString": "Staff By qualification Report"
+          "valueString": "Staff By Qualification Report"
         },
         {
           "url": "resource",
-          "valueString": "Practitioner"
+          "valueString": "Basic"
         },
         {
           "url": "query",
-          "valueString": "active=true"
+          "valueString": "Basic.meta.profile = 'http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history'"
         },
         {
           "url": "displayCheckbox",
@@ -33,6 +33,121 @@
         {
           "url": "locationBasedConstraint",
           "valueBoolean": true
+        },
+        {
+          "extension": [
+            {
+              "url": "label",
+              "valueString": "level"
+            },
+            {
+              "url": "name",
+              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-education-history').extension.where(url='level').valueCoding.display"
+            },
+            {
+              "url": "display",
+              "valueString": "Educational Background"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": true
+            },
+            {
+              "url": "order",
+              "valueInteger": 14
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        },
+        {
+          "extension": [
+            {
+              "url": "label",
+              "valueString": "publicHealth"
+            },
+            {
+              "url": "name",
+              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-education-history').extension.where(url='publicHealth').valueCoding.display"
+            },
+            {
+              "url": "display",
+              "valueString": "Qualification of Public Health"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": true
+            },
+            {
+              "url": "order",
+              "valueInteger": 15
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        },
+        {
+          "extension": [
+            {
+              "url": "label",
+              "valueString": "literary"
+            },
+            {
+              "url": "name",
+              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-education-history').extension.where(url='literary').valueString"
+            },
+            {
+              "url": "display",
+              "valueString": "Qualification of Literary"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": true
+            },
+            {
+              "url": "order",
+              "valueInteger": 16
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "name",
+          "valueString": "practitioner"
+        },
+        {
+          "url": "resource",
+          "valueString": "Practitioner"
+        },
+        {
+          "url": "linkElement",
+          "valueString": "Practitioner.id"
+        },
+        {
+          "url": "linkTo",
+          "valueString": "qualification.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+        },
+        {
+          "url": "multiple",
+          "valueBoolean": false
+        },
+        {
+          "url": "query",
+          "valueString": "Practitioner.active=true"
         },
         {
           "extension": [
@@ -242,7 +357,8 @@
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
         }
-      ]
+      ],
+      "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportLink"
     },
     {
       "extension": [
@@ -558,122 +674,6 @@
         }
       ],
       "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportLink"
-    },
-    {
-      "extension": [
-        {
-          "url": "name",
-          "valueString": "qualification"
-        },
-        {
-          "url": "resource",
-          "valueString": "Basic"
-        },
-        {
-          "url": "linkElement",
-          "valueString": "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
-        },
-        {
-          "url": "linkTo",
-          "valueString": "practitioner"
-        },
-        {
-          "url": "linkElementSearchParameter",
-          "valueString": "practitioner"
-        },
-        {
-          "url": "multiple",
-          "valueBoolean": false
-        },
-        {
-          "extension": [
-            {
-              "url": "label",
-              "valueString": "level"
-            },
-            {
-              "url": "name",
-              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-education-history').extension.where(url='level').valueCoding.display"
-            },
-            {
-              "url": "display",
-              "valueString": "Educational Background"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": true
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": true
-            },
-            {
-              "url": "order",
-              "valueInteger": 14
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        },
-        {
-          "extension": [
-            {
-              "url": "label",
-              "valueString": "publicHealth"
-            },
-            {
-              "url": "name",
-              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-education-history').extension.where(url='publicHealth').valueCoding.display"
-            },
-            {
-              "url": "display",
-              "valueString": "Qualification of Public Health"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": true
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": true
-            },
-            {
-              "url": "order",
-              "valueInteger": 15
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        },
-        {
-          "extension": [
-            {
-              "url": "label",
-              "valueString": "literary"
-            },
-            {
-              "url": "name",
-              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-education-history').extension.where(url='literary').valueString"
-            },
-            {
-              "url": "display",
-              "valueString": "Qualification of Literary"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": true
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": true
-            },
-            {
-              "url": "order",
-              "valueInteger": 16
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        }
-      ],
-      "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportLink"
     }
   ],
   "code": {
@@ -685,6 +685,6 @@
     ]
   },
   "subject": {
-    "reference": "StructureDefinition/ihris-practitioner"
+    "reference": "StructureDefinition/ihris-basic-education-history"
   }
 }

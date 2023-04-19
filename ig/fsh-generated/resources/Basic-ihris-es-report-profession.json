@@ -12,7 +12,7 @@
       "extension": [
         {
           "url": "name",
-          "valueString": "practitionerProfession"
+          "valueString": "profession"
         },
         {
           "url": "label",
@@ -20,11 +20,11 @@
         },
         {
           "url": "resource",
-          "valueString": "Practitioner"
+          "valueString": "Basic"
         },
         {
           "url": "query",
-          "valueString": "active=true"
+          "valueString": "Basic.meta.profile = 'http://ihris.org/fhir/StructureDefinition/ihris-basic-profession'"
         },
         {
           "url": "displayCheckbox",
@@ -33,6 +33,208 @@
         {
           "url": "locationBasedConstraint",
           "valueBoolean": true
+        },
+        {
+          "extension": [
+            {
+              "url": "label",
+              "valueString": "profession"
+            },
+            {
+              "url": "name",
+              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='profession').valueCoding.display"
+            },
+            {
+              "url": "display",
+              "valueString": "Profession"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": true
+            },
+            {
+              "url": "order",
+              "valueInteger": 14
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        },
+        {
+          "extension": [
+            {
+              "url": "label",
+              "valueString": "professionByPENSS"
+            },
+            {
+              "url": "name",
+              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='professionByPENSS').valueCoding.display"
+            },
+            {
+              "url": "display",
+              "valueString": "Profession By PENSS"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": true
+            },
+            {
+              "url": "order",
+              "valueInteger": 15
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        },
+        {
+          "extension": [
+            {
+              "url": "label",
+              "valueString": "professionByKSP"
+            },
+            {
+              "url": "name",
+              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='professionByKSP').valueCoding.display"
+            },
+            {
+              "url": "display",
+              "valueString": "Profession by KSP (Primary Health Care)"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": true
+            },
+            {
+              "url": "order",
+              "valueInteger": 16
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        },
+        {
+          "extension": [
+            {
+              "url": "label",
+              "valueString": "stdKSPPHCM"
+            },
+            {
+              "url": "name",
+              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='stdKSPPHCM').valueCoding.display"
+            },
+            {
+              "url": "display",
+              "valueString": "Std KSP(Primary Health Care) (Municipality)"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": true
+            },
+            {
+              "url": "order",
+              "valueInteger": 17
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        },
+        {
+          "extension": [
+            {
+              "url": "label",
+              "valueString": "stdKSPPHCH"
+            },
+            {
+              "url": "name",
+              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='stdKSPPHCH').valueCoding.display"
+            },
+            {
+              "url": "display",
+              "valueString": "Std KSP Hospitals"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": true
+            },
+            {
+              "url": "order",
+              "valueInteger": 18
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        },
+        {
+          "extension": [
+            {
+              "url": "label",
+              "valueString": "compoundAllies"
+            },
+            {
+              "url": "name",
+              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='compoundAllies').valueCoding.display"
+            },
+            {
+              "url": "display",
+              "valueString": "Compound Allies"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": true
+            },
+            {
+              "url": "order",
+              "valueInteger": 19
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "name",
+          "valueString": "practitioner"
+        },
+        {
+          "url": "resource",
+          "valueString": "Practitioner"
+        },
+        {
+          "url": "linkElement",
+          "valueString": "Practitioner.id"
+        },
+        {
+          "url": "linkTo",
+          "valueString": "profession.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+        },
+        {
+          "url": "multiple",
+          "valueBoolean": false
+        },
+        {
+          "url": "query",
+          "valueString": "Practitioner.active=true"
         },
         {
           "extension": [
@@ -242,7 +444,8 @@
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
         }
-      ]
+      ],
+      "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportLink"
     },
     {
       "extension": [
@@ -332,35 +535,6 @@
           "extension": [
             {
               "url": "label",
-              "valueString": "endDate"
-            },
-            {
-              "url": "name",
-              "valueString": "period.end"
-            },
-            {
-              "url": "display",
-              "valueString": "End Date"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": true
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": false
-            },
-            {
-              "url": "order",
-              "valueInteger": 8
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        },
-        {
-          "extension": [
-            {
-              "url": "label",
               "valueString": "investitureDate"
             },
             {
@@ -381,7 +555,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 9
+              "valueInteger": 8
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
@@ -410,7 +584,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 10
+              "valueInteger": 9
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
@@ -439,7 +613,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 11
+              "valueInteger": 10
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
@@ -468,7 +642,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 12
+              "valueInteger": 11
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
@@ -497,7 +671,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 13
+              "valueInteger": 12
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
@@ -526,7 +700,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 14
+              "valueInteger": 13
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
@@ -587,209 +761,6 @@
         }
       ],
       "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportLink"
-    },
-    {
-      "extension": [
-        {
-          "url": "name",
-          "valueString": "profession"
-        },
-        {
-          "url": "resource",
-          "valueString": "Basic"
-        },
-        {
-          "url": "linkElement",
-          "valueString": "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
-        },
-        {
-          "url": "linkTo",
-          "valueString": "practitioner"
-        },
-        {
-          "url": "linkElementSearchParameter",
-          "valueString": "practitioner"
-        },
-        {
-          "url": "multiple",
-          "valueBoolean": false
-        },
-        {
-          "extension": [
-            {
-              "url": "label",
-              "valueString": "profession"
-            },
-            {
-              "url": "name",
-              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='profession').valueCoding.display"
-            },
-            {
-              "url": "display",
-              "valueString": "Profession"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": true
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": true
-            },
-            {
-              "url": "order",
-              "valueInteger": 15
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        },
-        {
-          "extension": [
-            {
-              "url": "label",
-              "valueString": "professionByPENSS"
-            },
-            {
-              "url": "name",
-              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='professionByPENSS').valueCoding.display"
-            },
-            {
-              "url": "display",
-              "valueString": "Profession By PENSS"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": true
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": true
-            },
-            {
-              "url": "order",
-              "valueInteger": 16
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        },
-        {
-          "extension": [
-            {
-              "url": "label",
-              "valueString": "professionByKSP"
-            },
-            {
-              "url": "name",
-              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='professionByKSP').valueCoding.display"
-            },
-            {
-              "url": "display",
-              "valueString": "Profession by KSP (Primary Health Care)"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": true
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": true
-            },
-            {
-              "url": "order",
-              "valueInteger": 17
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        },
-        {
-          "extension": [
-            {
-              "url": "label",
-              "valueString": "stdKSPPHCM"
-            },
-            {
-              "url": "name",
-              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='stdKSPPHCM').valueCoding.display"
-            },
-            {
-              "url": "display",
-              "valueString": "Std KSP(Primary Health Care) (Municipality)"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": true
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": true
-            },
-            {
-              "url": "order",
-              "valueInteger": 18
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        },
-        {
-          "extension": [
-            {
-              "url": "label",
-              "valueString": "stdKSPPHCH"
-            },
-            {
-              "url": "name",
-              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='stdKSPPHCH').valueCoding.display"
-            },
-            {
-              "url": "display",
-              "valueString": "Std KSP Hospitals"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": true
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": true
-            },
-            {
-              "url": "order",
-              "valueInteger": 19
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        },
-        {
-          "extension": [
-            {
-              "url": "label",
-              "valueString": "compoundAllies"
-            },
-            {
-              "url": "name",
-              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='compoundAllies').valueCoding.display"
-            },
-            {
-              "url": "display",
-              "valueString": "Compound Allies"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": true
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": true
-            },
-            {
-              "url": "order",
-              "valueInteger": 20
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        }
-      ],
-      "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportLink"
     }
   ],
   "code": {
@@ -801,6 +772,6 @@
     ]
   },
   "subject": {
-    "reference": "StructureDefinition/ihris-practitioner"
+    "reference": "StructureDefinition/ihris-basic-profession"
   }
 }
