@@ -111,23 +111,23 @@
         },
         {
           "url": "field",
-          "valueString": "PractitionerRole.extension:scale"
+          "valueString": "PractitionerRole.extension:scale.value[x]:valueString"
         },
         {
           "url": "field",
-          "valueString": "PractitionerRole.extension:grade"
+          "valueString": "PractitionerRole.extension:grade.value[x]:valueString"
         },
         {
           "url": "field",
-          "valueString": "PractitionerRole.extension:regime"
+          "valueString": "PractitionerRole.extension:regime.value[x]:valueCoding.display"
         },
         {
           "url": "field",
-          "valueString": "PractitionerRole.extension:regimeGrade"
+          "valueString": "PractitionerRole.extension:regimeGrade.value[x]:valueCoding.display"
         },
         {
           "url": "field",
-          "valueString": "PractitionerRole.extension:reasonForDepature"
+          "valueString": "PractitionerRole.extension:reasonForDepature.value[x]:valueCoding.display"
         },
         {
           "url": "field",

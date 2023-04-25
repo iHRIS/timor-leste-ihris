@@ -220,11 +220,11 @@ Usage:          #example
 * extension[section][0].extension[field][3].valueString = "PractitionerRole.period"
 * extension[section][0].extension[field][4].valueString = "PractitionerRole.extension:investitureDate"
 * extension[section][0].extension[field][5].valueString = "PractitionerRole.extension:salary"
-* extension[section][0].extension[field][6].valueString = "PractitionerRole.extension:scale"
-* extension[section][0].extension[field][7].valueString = "PractitionerRole.extension:grade"
-* extension[section][0].extension[field][8].valueString = "PractitionerRole.extension:regime"
-* extension[section][0].extension[field][9].valueString = "PractitionerRole.extension:regimeGrade"
-* extension[section][0].extension[field][10].valueString = "PractitionerRole.extension:reasonForDepature"
+* extension[section][0].extension[field][6].valueString = "PractitionerRole.extension:scale.value[x]:valueString"
+* extension[section][0].extension[field][7].valueString = "PractitionerRole.extension:grade.value[x]:valueString"
+* extension[section][0].extension[field][8].valueString = "PractitionerRole.extension:regime.value[x]:valueCoding.display"
+* extension[section][0].extension[field][9].valueString = "PractitionerRole.extension:regimeGrade.value[x]:valueCoding.display"
+* extension[section][0].extension[field][10].valueString = "PractitionerRole.extension:reasonForDepature.value[x]:valueCoding.display"
 * extension[section][0].extension[field][11].valueString = "PractitionerRole.extension:jobInformationRemark"
 
 Instance:       ihris-page-job
