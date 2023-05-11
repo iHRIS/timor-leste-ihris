@@ -652,6 +652,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/location-boundary-geojson"
+        },
+        "name": "Location Boundary (GeoJSON)",
+        "description": "A boundary shape that represents the outside edge of the location (in GeoJSON format) This shape may have holes, and disconnected shapes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/task-attributes"
         },
         "name": "Task Attributes",
@@ -1431,6 +1439,13 @@
       },
       {
         "reference": {
+          "reference": "Bundle/TimorCountry"
+        },
+        "name": "TimorCountry",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/basic-location-constraint"
         },
         "name": "basic-location-constraint",
@@ -1665,6 +1680,13 @@
           "reference": "Basic/ihris-page-frequency"
         },
         "name": "iHRIS Pay Frequency CodeSystem Page",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-page-gender"
+        },
+        "name": "iHRIS Gender CodeSystem Page",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
       },
       {
