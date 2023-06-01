@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2023-05-11T10:18:48.423Z",
+        "when": "2023-06-01T10:11:27.650Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "Xrp+S2t7lfqvulmCf7kV6fYg5cz3lu1a4cq2C1R0WQsbZsLy7h6zdJThMKXzl8gt0JyU2VK+UliFTUfDOIOqumgVZPbQa2sUD/fUamCyQs9ZAPdHMuTAiKq9gqvPcVHEleIMkJJ/9Ps+mNYA1QTEqliFTdZCI7yfv9AJeyAP3XQ="
+        "data": "PKBjW6KHqIqeIJ2yeYlq53J28QPNFc9hyDebIBUcq2X4Upi3H0YN03yis1DyM9HtsiKOvvJk/ukzSQxwFkb9GrhHkGWQsTK8KZICPtnlgZS3MDdc0pSVFpi5sAP7Ag6UhSR11QNiVAmeb9gGyO7BchM4CDwTD6VUNlZgmcIBTSk="
       }
     },
     {
@@ -83,8 +83,12 @@
           "valueString": "http://ihris.org/"
         },
         {
-          "name": "site:nav:home",
-          "valueString": "/resource/search/practitioner"
+          "name": "site:nav:home:url",
+          "valueString": "/ihrisapp/ihris-dashboard/index.html#/dashBuilder/1942"
+        },
+        {
+          "name": "site:nav:home:external",
+          "valueString": "true"
         },
         {
           "name": "site:nav:menu:profile:text",
