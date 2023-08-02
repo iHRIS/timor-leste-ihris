@@ -61,6 +61,13 @@
           "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-profession-valueset",
           "required": false,
           "repeats": false
+        },
+        {
+          "linkId": "Basic.extension[0].extension[6]",
+          "text": "Attachment",
+          "type": "attachment",
+          "required": false,
+          "repeats": false
         }
       ]
     }

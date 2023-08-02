@@ -103,6 +103,13 @@
           "text": "Active",
           "type": "boolean",
           "required": true
+        },
+        {
+          "linkId": "Practitioner.photo",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.photo",
+          "text": "Passport Photo",
+          "type": "attachment",
+          "required": false
         }
       ]
     },
@@ -291,7 +298,7 @@
     },
     {
       "linkId": "Practitioner.identifier",
-      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner",
       "text": "Identifiers|Identifiers for the practitioner",
       "type": "group",
       "item": [

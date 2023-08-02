@@ -86,6 +86,12 @@ Usage:          #definition
 * item[0].item[4].type = #boolean
 * item[0].item[4].required = true
 
+* item[0].item[5].linkId = "Practitioner.photo"
+* item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.photo"
+* item[0].item[5].text = "Passport Photo"
+* item[0].item[5].type = #attachment
+* item[0].item[5].required = false
+
 * item[1].linkId = "__Practitioner:contact"
 * item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner"
 * item[1].text = "Contact Details|email, phone numbers"
@@ -201,7 +207,7 @@ Usage:          #definition
 * item[2].item[5].repeats = false
 
 * item[3].linkId = "Practitioner.identifier"
-* item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier"
+* item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner"
 * item[3].text = "Identifiers|Identifiers for the practitioner"
 * item[3].type = #group
 

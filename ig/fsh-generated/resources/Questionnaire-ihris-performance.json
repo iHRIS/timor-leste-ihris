@@ -37,10 +37,10 @@
         },
         {
           "linkId": "Basic.extension[0].extension[3]",
-          "text": "Score Attained",
-          "type": "choice",
+          "text": "Upload Document",
+          "type": "attachment",
           "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-performance-score-valueset",
-          "required": true,
+          "required": false,
           "repeats": false
         }
       ]

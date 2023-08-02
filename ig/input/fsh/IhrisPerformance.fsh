@@ -16,6 +16,8 @@ Description:    "iHRIS Profile of the Basic resource for Performance."
 * extension[performance].extension[period].valuePeriod.end ^label = "Evaluation Period End Date"
 * extension[performance].extension[score].valueCoding ^label = "Score Attained"
 * extension[performance].extension[score].valueCoding MS
+* extension[performance].extension[attachment].valueAttachment ^label = "Upload Documents"
+* extension[performance].extension[attachment].valueAttachment MS
     
 Extension:      IhrisPerformance
 Id:             ihris-performance
@@ -23,7 +25,8 @@ Title:          "Performance details"
 * extension contains
       evaluator 1..1 MS and
       period 1..1 MS and
-      score 1..1 MS 
+      score 1..1 MS and
+      attachment 0..* MS
 * extension[evaluator].value[x] only string
 * extension[evaluator].valueString ^label = "Evaluator's Name"
 * extension[score].value[x] only Coding
@@ -35,6 +38,8 @@ Title:          "Performance details"
 * extension[period].valuePeriod.start ^label = "Evaluation Period Start Date"
 * extension[period].valuePeriod.end 1..1 MS
 * extension[period].valuePeriod.end ^label = "Evaluation Period End Date"
+* extension[attachment].valueAttachment ^label = "Upload Documents"
+* extension[attachment].value[x] only Attachment
 
 CodeSystem:      IhrisPerformanceScore
 Id:              ihris-performance-score
@@ -93,6 +98,12 @@ Usage:          #definition
 * item[0].item[3].required = true
 * item[0].item[3].repeats = false
 
+* item[0].item[3].linkId = "Basic.extension[0].extension[3]"
+* item[0].item[3].text = "Upload Document"
+* item[0].item[3].type = #attachment
+* item[0].item[3].required = false
+* item[0].item[3].repeats = false
+
 Instance:       ihris-page-performance
 InstanceOf:     IhrisPage
 Title:          "iHRIS Basic Performance Page"
@@ -113,3 +124,4 @@ Usage:          #example
 * extension[section][0].extension[field][1].valueString = "Basic.extension:performance.extension:evaluator.value[x]:valueString"
 * extension[section][0].extension[field][2].valueString = "Basic.extension:performance.extension:period.value[x]:valuePeriod"
 * extension[section][0].extension[field][3].valueString = "Basic.extension:performance.extension:score.value[x]:valueCoding"
+* extension[section][0].extension[field][4].valueString = "Basic.extension:performance.extension:attachment.value[x]:valueAttachment"

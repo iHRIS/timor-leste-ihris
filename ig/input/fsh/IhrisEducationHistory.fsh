@@ -13,6 +13,8 @@ Description:    "iHRIS Profile of the Basic resource for Qualification."
 * extension[educationHistory].extension[publicHealth].valueCoding 0..1 MS
 * extension[educationHistory].extension[literary].valueString ^label = "Qualification of Literary"
 * extension[educationHistory].extension[literary].valueString 0..1 MS
+* extension[educationHistory].extension[attachment].valueAttachment ^label = "Upload Documents"
+* extension[educationHistory].extension[attachment].valueAttachment MS
     
 Extension:      IhrisEducationHistory
 Id:             ihris-education-history
@@ -20,7 +22,8 @@ Title:          "Qualification details"
 * extension contains
       level 0..1 MS and
       publicHealth 0..1 MS and
-      literary 0..1 MS
+      literary 0..1 MS and
+      attachment 0..* MS
 * extension[level].value[x] only Coding
 * extension[level].valueCoding ^label = "Education Background"
 * extension[level].valueCoding from IhrisEducationBackgroundValueSet (required)
@@ -29,6 +32,8 @@ Title:          "Qualification details"
 * extension[publicHealth].valueCoding from IhrisPublicHealthValueSet (required)
 * extension[literary].value[x] only string
 * extension[literary].valueString ^label = "Qualification of Literary"
+* extension[attachment].valueAttachment ^label = "Upload Documents"
+* extension[attachment].value[x] only Attachment
 
 CodeSystem:      IhrisEducationBackgroundCodeSystem
 Id:              ihris-educational-background-codesystem
@@ -103,6 +108,12 @@ Usage:          #definition
 * item[0].item[2].required = false
 * item[0].item[2].repeats = false
 
+* item[0].item[3].linkId = "Basic.extension[0].extension[3]"
+* item[0].item[3].text = "Attachment"
+* item[0].item[3].type = #attachment
+* item[0].item[3].required = false
+* item[0].item[3].repeats = false
+
 Instance:       ihris-page-basic-education-history
 InstanceOf:     IhrisPage
 Title:          "Qualification"
@@ -132,6 +143,7 @@ Usage:          #example
 * extension[section][0].extension[field][1].valueString = "extension:educationHistory.extension:level.value[x]:valueCoding"
 * extension[section][0].extension[field][2].valueString = "extension:educationHistory.extension:publicHealth.value[x]:valueCoding"
 * extension[section][0].extension[field][3].valueString = "extension:educationHistory.extension:literary.value[x]:valueString"
+* extension[section][0].extension[field][4].valueString = "extension:educationHistory.extension:attachment.value[x]:valueAttachment"
 
 
 Instance:       ihris-page-educational-background

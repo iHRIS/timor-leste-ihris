@@ -26,6 +26,8 @@ Description:    "iHRIS Profile of the Basic resource for Work Experience."
 * extension[employmentHistory].extension[responsibilities] ^label = "Job Description"
 * extension[employmentHistory].extension[reasonLeaving].valueString MS
 * extension[employmentHistory].extension[reasonLeaving] ^label = "Reason For Leaving"
+* extension[employmentHistory].extension[attachment].valueAttachment ^label = "Upload Documents"
+* extension[employmentHistory].extension[attachment].valueAttachment MS
 
 Extension:      IhrisEmploymentHistory
 Id:             ihris-employment-history
@@ -38,7 +40,8 @@ Title:          "Work Experience details"
       startingSalary 0..1 MS and
       period 0..1 MS and
       responsibilities 0..1 MS and
-      reasonLeaving 0..1 MS
+      reasonLeaving 0..1 MS and
+      attachment 0..* MS
 * extension[organization].value[x] only string
 * extension[organization].valueString ^label = "Organization Name"
 * extension[address].value[x] only string
@@ -71,6 +74,8 @@ Title:          "Work Experience details"
 * extension[responsibilities].valueString ^label = "Job Description"
 * extension[reasonLeaving].value[x] only string
 * extension[reasonLeaving].valueString ^label = "Reason For Leaving"
+* extension[attachment].valueAttachment ^label = "Upload Documents"
+* extension[attachment].value[x] only Attachment
 
 Instance:       IhrisPractitionerWorkflowEmploymentHistory
 InstanceOf:     IhrisQuestionnaire
@@ -155,6 +160,12 @@ Usage:          #definition
 * item[0].item[8].required = false
 * item[0].item[8].repeats = false
 
+* item[0].item[9].linkId = "Basic.extension[0].extension[9]"
+* item[0].item[9].text = "Attachment"
+* item[0].item[9].type = #attachment
+* item[0].item[9].required = false
+* item[0].item[9].repeats = false
+
 Instance:       ihris-page-employment-history
 InstanceOf:     IhrisPage
 Title:          "iHRIS Basic Work Experience Page"
@@ -187,3 +198,4 @@ Usage:          #example
 * extension[section][0].extension[field][6].valueString = "Basic.extension:employmentHistory.extension:period.value[x]:valuePeriod"
 * extension[section][0].extension[field][7].valueString = "Basic.extension:employmentHistory.extension:responsibilities.value[x]:valueString"
 * extension[section][0].extension[field][8].valueString = "Basic.extension:employmentHistory.extension:reasonLeaving.value[x]:valueString"
+* extension[section][0].extension[field][4].valueString = "Basic.extension:employmentHistory.extension:attachment.value[x]:valueAttachment"

@@ -19,6 +19,8 @@ Description:    "iHRIS Profile of the Basic resource for Leave."
 * extension[leave].extension[period].valuePeriod.end ^maxValueDateTime = "2030-01-01"
 * extension[leave].extension[dateRequested].valueDate MS
 * extension[leave].extension[daysRequested].valueInteger MS
+* extension[leave].extension[attachment].valueAttachment ^label = "Upload Documents"
+* extension[leave].extension[attachment].valueAttachment MS
     
 Extension:      IhrisLeave
 Id:             ihris-leave
@@ -27,7 +29,8 @@ Title:          "Leave details"
       leave-type 1..1 MS and
       period 1..1 MS and
       daysRequested 0..1 MS and
-      dateRequested 0..1 MS
+      dateRequested 0..1 MS and
+      attachment 0..* MS
 * extension[leave-type].value[x] only Coding
 * extension[leave-type].valueCoding from IhrisLeaveTypeValueSet (required)
 * extension[leave-type].valueCoding ^label = "Leave Type"
@@ -49,6 +52,8 @@ Title:          "Leave details"
 * extension[daysRequested].valueInteger ^label = "Days Requested"
 * extension[dateRequested].value[x] only date
 * extension[dateRequested].valueDate ^label = "Requested Date"
+* extension[attachment].valueAttachment ^label = "Upload Documents"
+* extension[attachment].value[x] only Attachment
 
 CodeSystem:      IhrisLeaveTypeCodeSystem
 Id:              ihris-leave-type-codesystem
@@ -112,6 +117,12 @@ Usage:          #definition
 * item[0].item[3].required = true
 * item[0].item[3].repeats = false
 
+* item[0].item[4].linkId = "Basic.extension[0].extension[4]"
+* item[0].item[4].text = "Attachment"
+* item[0].item[4].type = #attachment
+* item[0].item[4].required = false
+* item[0].item[4].repeats = false
+
 Instance:       ihris-page-leave
 InstanceOf:     IhrisPage
 Title:          "iHRIS Basic Leave Page"
@@ -138,6 +149,7 @@ Usage:          #example
 * extension[section][0].extension[field][2].valueString = "Basic.extension:leave.extension:daysRequested.value[x]:valueInteger"
 * extension[section][0].extension[field][3].valueString = "Basic.extension:leave.extension:period.value[x]:valuePeriod"
 * extension[section][0].extension[field][4].valueString = "Basic.extension:leave.extension:dateRequested.value[x]:valueDate"
+* extension[section][0].extension[field][5].valueString = "Basic.extension:leave.extension:attachment.value[x]:valueAttachment"
 
 Instance:       ihris-page-leave-type
 InstanceOf:     IhrisPage

@@ -19,6 +19,8 @@ Description:    "iHRIS Profile of the Basic resource for Profession."
 * extension[profession].extension[stdKSPPHCH].valueCoding 0..1 MS
 * extension[profession].extension[compoundAllies].valueCoding ^label = "Compound Allies"
 * extension[profession].extension[compoundAllies].valueCoding 0..1 MS
+* extension[profession].extension[attachment].valueAttachment ^label = "Upload Documents"
+* extension[profession].extension[attachment].valueAttachment MS
     
 Extension:      IhrisProfession
 Id:             ihris-profession
@@ -29,7 +31,8 @@ Title:          "Profession details"
       professionByKSP 0..1 MS and
       stdKSPPHCM 0..1 MS and
       stdKSPPHCH 0..1 MS and
-      compoundAllies 0..1 MS
+      compoundAllies 0..1 MS and
+      attachment 0..* MS
 * extension[profession].value[x] only Coding
 * extension[profession].valueCoding from IhrisProfessionValueSet
 * extension[profession].valueCoding ^label = "Profession"
@@ -47,6 +50,8 @@ Title:          "Profession details"
 * extension[stdKSPPHCH].valueCoding from IhrisProfessionValueSet (required)
 * extension[compoundAllies].valueCoding ^label = "Compound Allies"
 * extension[compoundAllies].valueCoding from IhrisProfessionValueSet (required)
+* extension[attachment].valueAttachment ^label = "Upload Documents"
+* extension[attachment].value[x] only Attachment
 
 CodeSystem:      IhrisProfessionCodeSystem
 Id:              ihris-profession-codesystem
@@ -148,6 +153,12 @@ Usage:          #definition
 * item[0].item[5].required = false
 * item[0].item[5].repeats = false
 
+* item[0].item[6].linkId = "Basic.extension[0].extension[6]"
+* item[0].item[6].text = "Attachment"
+* item[0].item[6].type = #attachment
+* item[0].item[6].required = false
+* item[0].item[6].repeats = false
+
 Instance:       ihris-page-profession
 InstanceOf:     IhrisPage
 Title:          "Profession"
@@ -182,6 +193,7 @@ Usage:          #example
 * extension[section][0].extension[field][4].valueString = "extension:profession.extension:stdKSPPHCM.value[x]:valueCoding"
 * extension[section][0].extension[field][5].valueString = "extension:profession.extension:stdKSPPHCH.value[x]:valueCoding"
 * extension[section][0].extension[field][6].valueString = "extension:profession.extension:compoundAllies.value[x]:valueCoding"
+* extension[section][0].extension[field][7].valueString = "extension:profession.extension:attachment.value[x]:valueAttachment"
 
 
 Instance:       ihris-page-professioncodesystem

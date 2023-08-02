@@ -134,6 +134,10 @@
         {
           "url": "field",
           "valueString": "extension:educationHistory.extension:literary.value[x]:valueString"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:educationHistory.extension:attachment.value[x]:valueAttachment"
         }
       ],
       "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"

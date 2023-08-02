@@ -47,6 +47,13 @@
           "type": "date",
           "required": true,
           "repeats": false
+        },
+        {
+          "linkId": "Basic.extension[0].extension[4]",
+          "text": "Attachment",
+          "type": "attachment",
+          "required": false,
+          "repeats": false
         }
       ]
     }

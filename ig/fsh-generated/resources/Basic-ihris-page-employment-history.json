@@ -129,7 +129,7 @@
         },
         {
           "url": "field",
-          "valueString": "Basic.extension:employmentHistory.extension:startingPosition.value[x]:valueString"
+          "valueString": "Basic.extension:employmentHistory.extension:attachment.value[x]:valueAttachment"
         },
         {
           "url": "field",

@@ -154,6 +154,10 @@
         {
           "url": "field",
           "valueString": "extension:profession.extension:compoundAllies.value[x]:valueCoding"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:profession.extension:attachment.value[x]:valueAttachment"
         }
       ],
       "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"
