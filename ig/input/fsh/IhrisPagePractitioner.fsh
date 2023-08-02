@@ -115,7 +115,7 @@ Usage:          #example
 * extension[section][6].extension[resource].extension[resource].valueReference = Reference(StructureDefinition/ihris-basic-performance)
 * extension[section][6].extension[resource].extension[searchfield].valueString = "practitioner"
 * extension[section][6].extension[resource].extension[linkfield].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
-* extension[section][6].extension[resource].extension[column][0].extension[header].valueString = "Evaluator's Name"
+* extension[section][6].extension[resource].extension[column][0].extension[header].valueString = "Evaluator Name"
 * extension[section][6].extension[resource].extension[column][0].extension[field].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-performance').extension.where(url='evaluator').valueString"
 * extension[section][6].extension[resource].extension[column][1].extension[header].valueString = "Score"
 * extension[section][6].extension[resource].extension[column][1].extension[field].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-performance').extension.where(url='score').valueCoding.display"

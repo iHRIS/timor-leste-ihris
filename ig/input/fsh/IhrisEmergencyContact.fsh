@@ -81,7 +81,7 @@ Usage:          #definition
 * purpose = "Workflow page for recording a Emergency information."
 
 * item[0].linkId = "Basic"
-* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-emergency"
+* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-emergency#Basic.extension:practitioner.value[x]:valueReference.reference"
 * item[0].text = "Emergency"
 * item[0].type = #group
 

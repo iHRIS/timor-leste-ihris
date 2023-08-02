@@ -109,17 +109,20 @@ Usage:          #definition
 
 * item[0].linkId = "Basic"
 * item[0].text = "Profession"
+* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-profession#Basic.extension:practitioner.value[x]:valueReference.reference"
 * item[0].type = #group
 
 * item[0].item[0].linkId = "Basic.extension[0].extension[0]"
 * item[0].item[0].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-profession-valueset"
 * item[0].item[0].text = "Profession"
+* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-profession#Basic.extension:profession.extension:profession.value[x]:valueCoding"
 * item[0].item[0].type = #choice
 * item[0].item[0].required = true
 * item[0].item[0].repeats = false
 
 * item[0].item[1].linkId = "Basic.extension[0].extension[1]"
 * item[0].item[1].text = "Profession By PENSS"
+* item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-profession#Basic.extension:profession.extension:professionByPENSS.value[x]:valueCoding"
 * item[0].item[1].type = #choice
 * item[0].item[1].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-profession-valueset"
 * item[0].item[1].required = true
@@ -127,6 +130,7 @@ Usage:          #definition
 
 * item[0].item[2].linkId = "Basic.extension[0].extension[2]"
 * item[0].item[2].text = "Profession by KSP"
+* item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-profession#Basic.extension:profession.extension:professionByKSP.value[x]:valueCoding"
 * item[0].item[2].type = #choice
 * item[0].item[2].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-profession-valueset"
 * item[0].item[2].required = true
@@ -134,6 +138,7 @@ Usage:          #definition
 
 * item[0].item[3].linkId = "Basic.extension[0].extension[3]"
 * item[0].item[3].text = "Std KSP (Municipality)"
+* item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-profession#Basic.extension:profession.extension:stdKSPPHCM.value[x]:valueCoding"
 * item[0].item[3].type = #choice
 * item[0].item[3].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-profession-valueset"
 * item[0].item[3].required = false
@@ -141,6 +146,7 @@ Usage:          #definition
 
 * item[0].item[4].linkId = "Basic.extension[0].extension[4]"
 * item[0].item[4].text = "Std KSP (Hospitals)"
+* item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-profession#Basic.extension:profession.extension:stdKSPPHCH.value[x]:valueCoding"
 * item[0].item[4].type = #choice
 * item[0].item[4].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-profession-valueset"
 * item[0].item[4].required = false
@@ -148,13 +154,15 @@ Usage:          #definition
 
 * item[0].item[5].linkId = "Basic.extension[0].extension[5]"
 * item[0].item[5].text = "Compound Allies"
+* item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-profession#Basic.extension:profession.extension:compoundAllies.value[x]:valueCoding"
 * item[0].item[5].type = #choice
 * item[0].item[5].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-profession-valueset"
 * item[0].item[5].required = false
 * item[0].item[5].repeats = false
 
 * item[0].item[6].linkId = "Basic.extension[0].extension[6]"
-* item[0].item[6].text = "Attachment"
+* item[0].item[6].text = "Upload Document"
+* item[0].item[6].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-profession#Basic.extension:profession.extension:attachment.value[x]:valueAttachment"
 * item[0].item[6].type = #attachment
 * item[0].item[6].required = false
 * item[0].item[6].repeats = false

@@ -17,11 +17,13 @@
     {
       "linkId": "Basic",
       "text": "Leave Details",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:practitioner.value[x]:valueReference.reference",
       "type": "group",
       "item": [
         {
           "linkId": "Basic.extension[0].extension[0]",
           "text": "Leave Type",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:leave.extension:leave-type.value[x]:valueCoding",
           "type": "choice",
           "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-leave-type-valueset",
           "required": true,
@@ -30,6 +32,7 @@
         {
           "linkId": "Basic.extension[0].extension[1]",
           "text": "Start Date",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:leave.extension:dateRequested.value[x]:valuePeriod.start",
           "type": "dateTime",
           "required": true,
           "repeats": false
@@ -37,6 +40,7 @@
         {
           "linkId": "Basic.extension[0].extension[2]",
           "text": "End Date",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:leave.extension:dateRequested.value[x]:valuePeriod.end",
           "type": "dateTime",
           "required": true,
           "repeats": false
@@ -44,13 +48,15 @@
         {
           "linkId": "Basic.extension[0].extension[3]",
           "text": "Date Requested",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:leave.extension:dateRequested.value[x]:valueDate",
           "type": "date",
           "required": true,
           "repeats": false
         },
         {
           "linkId": "Basic.extension[0].extension[4]",
-          "text": "Attachment",
+          "text": "Upload Document",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:leave.extension:attachment.value[x]:valueAttachment",
           "type": "attachment",
           "required": false,
           "repeats": false

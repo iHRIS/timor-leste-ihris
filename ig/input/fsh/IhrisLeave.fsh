@@ -90,10 +90,12 @@ Usage:          #definition
 
 * item[0].linkId = "Basic"
 * item[0].text = "Leave Details"
+* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:practitioner.value[x]:valueReference.reference"
 * item[0].type = #group
 
 * item[0].item[0].linkId = "Basic.extension[0].extension[0]"
 * item[0].item[0].text = "Leave Type"
+* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:leave.extension:leave-type.value[x]:valueCoding"
 * item[0].item[0].type = #choice
 * item[0].item[0].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-leave-type-valueset"
 * item[0].item[0].required = true
@@ -101,24 +103,28 @@ Usage:          #definition
 
 * item[0].item[1].linkId = "Basic.extension[0].extension[1]"
 * item[0].item[1].text = "Start Date"
+* item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:leave.extension:dateRequested.value[x]:valuePeriod.start"
 * item[0].item[1].type = #dateTime
 * item[0].item[1].required = true
 * item[0].item[1].repeats = false
 
 * item[0].item[2].linkId = "Basic.extension[0].extension[2]"
 * item[0].item[2].text = "End Date"
+* item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:leave.extension:dateRequested.value[x]:valuePeriod.end"
 * item[0].item[2].type = #dateTime
 * item[0].item[2].required = true
 * item[0].item[2].repeats = false
 
 * item[0].item[3].linkId = "Basic.extension[0].extension[3]"
 * item[0].item[3].text = "Date Requested"
+* item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:leave.extension:dateRequested.value[x]:valueDate"
 * item[0].item[3].type = #date
 * item[0].item[3].required = true
 * item[0].item[3].repeats = false
 
 * item[0].item[4].linkId = "Basic.extension[0].extension[4]"
-* item[0].item[4].text = "Attachment"
+* item[0].item[4].text = "Upload Document"
+* item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:leave.extension:attachment.value[x]:valueAttachment"
 * item[0].item[4].type = #attachment
 * item[0].item[4].required = false
 * item[0].item[4].repeats = false

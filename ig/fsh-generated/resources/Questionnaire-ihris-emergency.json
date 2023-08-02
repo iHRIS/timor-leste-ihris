@@ -162,7 +162,7 @@
         }
       ],
       "linkId": "Basic",
-      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-emergency",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-emergency#Basic.extension:practitioner.value[x]:valueReference.reference",
       "text": "Emergency",
       "type": "group"
     }

@@ -8,7 +8,7 @@ Description:    "iHRIS Profile of the Basic resource for Performance."
 * extension contains
     IhrisPerformance named performance 1..1 MS
 * extension[performance].extension[evaluator].valueString MS
-* extension[performance].extension[evaluator].valueString ^label = "Evaluator's Name"
+* extension[performance].extension[evaluator].valueString ^label = "Evaluator Name"
 * extension[performance].extension[period].valuePeriod MS
 * extension[performance].extension[period].valuePeriod.start MS
 * extension[performance].extension[period].valuePeriod.start ^label = "Evaluation Period Start Date"
@@ -28,7 +28,7 @@ Title:          "Performance details"
       score 1..1 MS and
       attachment 0..* MS
 * extension[evaluator].value[x] only string
-* extension[evaluator].valueString ^label = "Evaluator's Name"
+* extension[evaluator].valueString ^label = "Evaluator Name"
 * extension[score].value[x] only Coding
 * extension[score].valueCoding ^label = "Score Attained"
 * extension[score].valueCoding from IhrisPerformanceScoreValueSet (required)
@@ -71,28 +71,33 @@ Usage:          #definition
 
 * item[0].linkId = "Basic"
 * item[0].text = "Performance"
+* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-performance#Basic.extension:practitioner.value[x]:valueReference.reference"
 * item[0].type = #group
 
 * item[0].item[0].linkId = "Basic.extension[0].extension[0]"
-* item[0].item[0].text = "Evaluator's Name"
+* item[0].item[0].text = "Evaluator Name"
+* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-performance#Basic.extension:performance.extension:evaluator.value[x]:valueString"
 * item[0].item[0].type = #string
 * item[0].item[0].required = true
 * item[0].item[0].repeats = false
 
 * item[0].item[1].linkId = "Basic.extension[0].extension[1]"
 * item[0].item[1].text = "Evaluation Period Start Date"
+* item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-performance#Basic.extension:performance.extension:period.value[x]:valuePeriod.start"
 * item[0].item[1].type = #date
 * item[0].item[1].required = true
 * item[0].item[1].repeats = false
 
 * item[0].item[2].linkId = "Basic.extension[0].extension[2]"
 * item[0].item[2].text = "Evaluation Period End Date"
+* item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-performance#Basic.extension:performance.extension:period.value[x]:valuePeriod.end"
 * item[0].item[2].type = #date
 * item[0].item[2].required = true
 * item[0].item[2].repeats = false
 
 * item[0].item[3].linkId = "Basic.extension[0].extension[3]"
 * item[0].item[3].text = "Score Attained"
+* item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-performance#Basic.extension:performance.extension:score.value[x]:valueCoding"
 * item[0].item[3].type = #choice
 * item[0].item[3].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-performance-score-valueset"
 * item[0].item[3].required = true
@@ -100,6 +105,7 @@ Usage:          #definition
 
 * item[0].item[3].linkId = "Basic.extension[0].extension[3]"
 * item[0].item[3].text = "Upload Document"
+* item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-performance#Basic.extension:performance.extension:attachment.value[x]:valueAttachment"
 * item[0].item[3].type = #attachment
 * item[0].item[3].required = false
 * item[0].item[3].repeats = false

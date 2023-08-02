@@ -603,7 +603,7 @@
               "extension": [
                 {
                   "url": "header",
-                  "valueString": "Evaluator's Name"
+                  "valueString": "Evaluator Name"
                 },
                 {
                   "url": "field",

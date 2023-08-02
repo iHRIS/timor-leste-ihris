@@ -12,11 +12,13 @@
     {
       "linkId": "Basic",
       "text": "Performance",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-performance#Basic.extension:practitioner.value[x]:valueReference.reference",
       "type": "group",
       "item": [
         {
           "linkId": "Basic.extension[0].extension[0]",
-          "text": "Evaluator's Name",
+          "text": "Evaluator Name",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-performance#Basic.extension:performance.extension:evaluator.value[x]:valueString",
           "type": "string",
           "required": true,
           "repeats": false
@@ -24,6 +26,7 @@
         {
           "linkId": "Basic.extension[0].extension[1]",
           "text": "Evaluation Period Start Date",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-performance#Basic.extension:performance.extension:period.value[x]:valuePeriod.start",
           "type": "date",
           "required": true,
           "repeats": false
@@ -31,6 +34,7 @@
         {
           "linkId": "Basic.extension[0].extension[2]",
           "text": "Evaluation Period End Date",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-performance#Basic.extension:performance.extension:period.value[x]:valuePeriod.end",
           "type": "date",
           "required": true,
           "repeats": false
@@ -38,6 +42,7 @@
         {
           "linkId": "Basic.extension[0].extension[3]",
           "text": "Upload Document",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-performance#Basic.extension:performance.extension:attachment.value[x]:valueAttachment",
           "type": "attachment",
           "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-performance-score-valueset",
           "required": false,

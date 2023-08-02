@@ -1045,7 +1045,7 @@
         "id": "Basic.extension:performance.extension:evaluator.value[x]:valueString",
         "path": "Basic.extension.extension.value[x]",
         "sliceName": "valueString",
-        "label": "Evaluator's Name",
+        "label": "Evaluator Name",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,

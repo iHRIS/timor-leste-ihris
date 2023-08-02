@@ -36,6 +36,7 @@
         {
           "linkId": "Basic.extension[0].extension[0]",
           "text": "Organization Name",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-employment-history#Basic.extension:employmentHistory.extension:organization.value[x]:valueCoding",
           "type": "string",
           "required": true,
           "repeats": false
@@ -43,6 +44,7 @@
         {
           "linkId": "Basic.extension[0].extension[1]",
           "text": "Organization Address",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-employment-history#Basic.extension:employmentHistory.extension:address.value[x]:valueString",
           "type": "text",
           "required": false,
           "repeats": false
@@ -50,6 +52,7 @@
         {
           "linkId": "Basic.extension[0].extension[2]",
           "text": "Organization Telephone",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-employment-history#Basic.extension:employmentHistory.extension:telephone.value[x]:valueString",
           "type": "string",
           "required": false,
           "repeats": false
@@ -57,6 +60,7 @@
         {
           "linkId": "Basic.extension[0].extension[3]",
           "text": "Position",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-employment-history#Basic.extension:employmentHistory.extension:startingPosition.value[x]:valueString",
           "type": "string",
           "required": true,
           "repeats": false
@@ -64,6 +68,7 @@
         {
           "linkId": "Basic.extension[0].extension[4]",
           "text": "Salary",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-employment-history#Basic.extension:employmentHistory.extension:startingSalary.value[x]:valueMoney",
           "type": "string",
           "required": false,
           "repeats": false
@@ -94,6 +99,7 @@
           ],
           "linkId": "Basic.extension[0].extension[5]",
           "text": "Date Started",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-employment-history#Basic.extension:employmentHistory.extension:period.value[x]:valuePeriod.start",
           "type": "dateTime",
           "required": true,
           "repeats": false
@@ -124,6 +130,7 @@
           ],
           "linkId": "Basic.extension[0].extension[6]",
           "text": "Date Ended",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-employment-history#Basic.extension:employmentHistory.extension:period.value[x]:valuePeriod.end",
           "type": "dateTime",
           "required": true,
           "repeats": false
@@ -131,6 +138,7 @@
         {
           "linkId": "Basic.extension[0].extension[7]",
           "text": "Job Description",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-employment-history#Basic.extension:employmentHistory.extension:responsibilities.value[x]:valueString",
           "type": "text",
           "required": false,
           "repeats": false
@@ -138,6 +146,7 @@
         {
           "linkId": "Basic.extension[0].extension[8]",
           "text": "Reason For Leaving",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-employment-history#Basic.extension:employmentHistory.extension:reasonLeaving.value[x]:valueString",
           "type": "string",
           "required": false,
           "repeats": false
@@ -145,6 +154,7 @@
         {
           "linkId": "Basic.extension[0].extension[9]",
           "text": "Attachment",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-employment-history#Basic.extension:employmentHistory.extension:attachment.value[x]:valueAttachment",
           "type": "attachment",
           "required": false,
           "repeats": false
@@ -152,6 +162,7 @@
       ],
       "linkId": "Basic",
       "text": "Work Experience",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-employment-history#Basic.extension:practitioner.value[x].valueReference",
       "type": "group"
     }
   ],

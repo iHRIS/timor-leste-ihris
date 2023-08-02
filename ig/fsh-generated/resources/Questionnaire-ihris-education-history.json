@@ -12,12 +12,14 @@
     {
       "linkId": "Basic",
       "text": "Qualification",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:practitioner.value[x].valueReference",
       "type": "group",
       "item": [
         {
           "linkId": "Basic.extension[0].extension[0]",
           "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-educational-background-valueset",
           "text": "Education Background",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:educationHistory.extension:level.value[x]:valueCoding",
           "type": "choice",
           "required": false,
           "repeats": false
@@ -25,6 +27,7 @@
         {
           "linkId": "Basic.extension[0].extension[1]",
           "text": "Qualification of Public Health",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:educationHistory.extension:publicHealth.value[x]:valueCoding",
           "type": "choice",
           "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-public-health-valueset",
           "required": false,
@@ -33,6 +36,7 @@
         {
           "linkId": "Basic.extension[0].extension[2]",
           "text": "Qualification of Literary",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:educationHistory.extension:literary.value[x]:valueString",
           "type": "string",
           "required": false,
           "repeats": false
@@ -40,6 +44,7 @@
         {
           "linkId": "Basic.extension[0].extension[3]",
           "text": "Attachment",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:educationHistory.extension:attachment.value[x]:valueAttachment",
           "type": "attachment",
           "required": false,
           "repeats": false
