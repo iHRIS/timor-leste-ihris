@@ -28,6 +28,8 @@ Description:    "iHRIS Profile of the Basic resource for Work Experience."
 * extension[employmentHistory].extension[reasonLeaving] ^label = "Reason For Leaving"
 * extension[employmentHistory].extension[attachment].valueAttachment ^label = "Upload Documents"
 * extension[employmentHistory].extension[attachment].valueAttachment MS
+* extension[employmentHistory].extension[attachment] ^label = "Documents"
+
 
 Extension:      IhrisEmploymentHistory
 Id:             ihris-employment-history
@@ -91,7 +93,7 @@ Usage:          #definition
 
 * item[0].linkId = "Basic"
 * item[0].text = "Work Experience"
-* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-employment-history#Basic.extension:practitioner.value[x].valueReference"
+* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-employment-history#Basic.extension:practitioner"
 * item[0].type = #group
 * item[0].extension[constraint].extension[key].valueId = "ihris-start-end-date"
 * item[0].extension[constraint].extension[severity].valueCode = #error
@@ -170,7 +172,7 @@ Usage:          #definition
 * item[0].item[8].repeats = false
 
 * item[0].item[9].linkId = "Basic.extension[0].extension[9]"
-* item[0].item[9].text = "Attachment"
+* item[0].item[9].text = "Upload Document"
 * item[0].item[9].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-employment-history#Basic.extension:employmentHistory.extension:attachment.value[x]:valueAttachment"
 * item[0].item[9].type = #attachment
 * item[0].item[9].required = false
@@ -182,16 +184,22 @@ Title:          "iHRIS Basic Work Experience Page"
 Usage:          #example
 * code = IhrisResourceCodeSystem#page
 * extension[display].extension[resource].valueReference = Reference(StructureDefinition/ihris-basic-employment-history)
-* extension[display].extension[link][0].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
-* extension[display].extension[link][0].extension[text].valueString = "View Health Worker"
+* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/employment-history/FIELD?edit=true"
+* extension[display].extension[link][0].extension[field].valueString = "Basic.id"
+* extension[display].extension[link][0].extension[text].valueString = "Edit"
 * extension[display].extension[link][0].extension[button].valueBoolean = true
-* extension[display].extension[link][0].extension[icon].valueString = "mdi-account-arrow-right"
-* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
+* extension[display].extension[link][0].extension[icon].valueString = "mdi-pencil"
+* extension[display].extension[link][0].extension[class].valueString = "secondary"
 * extension[display].extension[link][1].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
-* extension[display].extension[link][1].extension[text].valueString = "Add Another"
+* extension[display].extension[link][1].extension[text].valueString = "View Health Worker"
 * extension[display].extension[link][1].extension[button].valueBoolean = true
 * extension[display].extension[link][1].extension[icon].valueString = "mdi-account-arrow-right"
-* extension[display].extension[link][1].extension[url].valueUrl = "/questionnaire/ihris-employment-history/employment-history?practitioner=FIELD"
+* extension[display].extension[link][1].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
+* extension[display].extension[link][2].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+* extension[display].extension[link][2].extension[text].valueString = "Add Another"
+* extension[display].extension[link][2].extension[button].valueBoolean = true
+* extension[display].extension[link][2].extension[icon].valueString = "mdi-account-arrow-right"
+* extension[display].extension[link][2].extension[url].valueUrl = "/questionnaire/ihris-employment-history/employment-history?practitioner=FIELD"
 * extension[display].extension[search][0].valueString = "Organization|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-employment-history').extension.where(url='organization').valueString"
 * extension[display].extension[search][1].valueString = "Starting Position|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-employment-history').extension.where(url='startingPosition').valueString"
 * extension[display].extension[field][0].extension[path].valueString = "Basic.extension:practitioner.value[x]:valueReference"

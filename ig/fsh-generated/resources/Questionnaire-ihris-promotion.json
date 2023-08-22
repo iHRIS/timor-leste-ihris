@@ -17,16 +17,19 @@
     {
       "linkId": "PractitionerRole",
       "text": "Promotion Details",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.id",
       "type": "group",
       "item": [
         {
           "linkId": "OldPractitionerRole",
           "text": "Old Position Details",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.id",
           "type": "group",
           "item": [
             {
-              "linkId": "period.end",
+              "linkId": "PractitionerRole.period.end",
               "text": "Position Change Date",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.period.end",
               "type": "dateTime",
               "required": true,
               "repeats": false
@@ -45,18 +48,20 @@
         {
           "linkId": "NewPractitionerRole",
           "text": "New Position Details",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.id",
           "type": "group",
           "item": [
             {
-              "linkId": "code",
+              "linkId": "PractitionerRole.code",
               "text": "New Job Title",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.code",
               "type": "choice",
               "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-job-timor",
               "required": true,
               "repeats": false
             },
             {
-              "linkId": "location",
+              "linkId": "PractitionerRole.location",
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.location",
               "text": "Workplace",
               "type": "reference",
@@ -64,28 +69,31 @@
               "repeats": false
             },
             {
-              "linkId": "salary",
+              "linkId": "PractitionerRole.extension[0]",
               "text": "New Salary",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:salary.value[x]:valueMoney",
               "type": "string",
               "required": true,
               "repeats": false
             },
             {
-              "linkId": "scale",
+              "linkId": "PractitionerRole.extension[1]",
               "text": "New Scale",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:scale.value[x]:valueString",
               "type": "string",
               "required": false,
               "repeats": false
             },
             {
-              "linkId": "grade",
-              "text": "New Grale",
+              "linkId": "PractitionerRole.extension[2]",
+              "text": "New Grade",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:grade.value[x]:valueString",
               "type": "string",
               "required": false,
               "repeats": false
             },
             {
-              "linkId": "jobInformationRemark",
+              "linkId": "PractitionerRole.extension[3]",
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:jobInformationRemark.value[x]:valueString",
               "text": "Remark",
               "type": "string",

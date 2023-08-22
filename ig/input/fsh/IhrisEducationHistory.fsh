@@ -15,6 +15,7 @@ Description:    "iHRIS Profile of the Basic resource for Qualification."
 * extension[educationHistory].extension[literary].valueString 0..1 MS
 * extension[educationHistory].extension[attachment].valueAttachment ^label = "Upload Documents"
 * extension[educationHistory].extension[attachment].valueAttachment MS
+* extension[educationHistory].extension[attachment] ^label = "Documents"
     
 Extension:      IhrisEducationHistory
 Id:             ihris-education-history
@@ -86,7 +87,7 @@ Usage:          #definition
 
 * item[0].linkId = "Basic"
 * item[0].text = "Qualification"
-* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:practitioner.value[x].valueReference"
+* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:practitioner"
 * item[0].type = #group
 
 * item[0].item[0].linkId = "Basic.extension[0].extension[0]"
@@ -113,7 +114,7 @@ Usage:          #definition
 * item[0].item[2].repeats = false
 
 * item[0].item[3].linkId = "Basic.extension[0].extension[3]"
-* item[0].item[3].text = "Attachment"
+* item[0].item[3].text = "Upload Document"
 * item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:educationHistory.extension:attachment.value[x]:valueAttachment"
 * item[0].item[3].type = #attachment
 * item[0].item[3].required = false
@@ -125,16 +126,22 @@ Title:          "Qualification"
 Usage:          #example
 * code = IhrisResourceCodeSystem#page
 * extension[display].extension[resource].valueReference = Reference(StructureDefinition/ihris-basic-education-history)
-* extension[display].extension[link][0].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
-* extension[display].extension[link][0].extension[text].valueString = "View Health Worker"
+* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/basic-education-history/FIELD?edit=true"
+* extension[display].extension[link][0].extension[field].valueString = "Basic.id"
+* extension[display].extension[link][0].extension[text].valueString = "Edit"
 * extension[display].extension[link][0].extension[button].valueBoolean = true
-* extension[display].extension[link][0].extension[icon].valueString = "mdi-account-arrow-right"
-* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
+* extension[display].extension[link][0].extension[icon].valueString = "mdi-pencil"
+* extension[display].extension[link][0].extension[class].valueString = "secondary"
 * extension[display].extension[link][1].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
-* extension[display].extension[link][1].extension[text].valueString = "Add Another"
+* extension[display].extension[link][1].extension[text].valueString = "View Health Worker"
 * extension[display].extension[link][1].extension[button].valueBoolean = true
 * extension[display].extension[link][1].extension[icon].valueString = "mdi-account-arrow-right"
-* extension[display].extension[link][1].extension[url].valueUrl = "/questionnaire/ihris-education-history/basic-education-history?practitioner=FIELD"
+* extension[display].extension[link][1].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
+* extension[display].extension[link][2].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+* extension[display].extension[link][2].extension[text].valueString = "Add Another"
+* extension[display].extension[link][2].extension[button].valueBoolean = true
+* extension[display].extension[link][2].extension[icon].valueString = "mdi-account-arrow-right"
+* extension[display].extension[link][2].extension[url].valueUrl = "/questionnaire/ihris-education-history/basic-education-history?practitioner=FIELD"
 * extension[display].extension[search][0].valueString = "Practitioner|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
 * extension[display].extension[search][1].valueString = "Education Background|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-education-history').extension.where(url='level').valueCoding.display"
 * extension[display].extension[search][2].valueString = "Qualification of Public Health|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-education-history').extension.where(url='publicHealth').valueCoding.display"

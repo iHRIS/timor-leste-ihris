@@ -18,6 +18,7 @@ Description:    "iHRIS Profile of the Basic resource for Performance."
 * extension[performance].extension[score].valueCoding MS
 * extension[performance].extension[attachment].valueAttachment ^label = "Upload Documents"
 * extension[performance].extension[attachment].valueAttachment MS
+* extension[performance].extension[attachment] ^label = "Documents"
     
 Extension:      IhrisPerformance
 Id:             ihris-performance
@@ -71,7 +72,7 @@ Usage:          #definition
 
 * item[0].linkId = "Basic"
 * item[0].text = "Performance"
-* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-performance#Basic.extension:practitioner.value[x]:valueReference.reference"
+* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-performance#Basic.extension:practitioner"
 * item[0].type = #group
 
 * item[0].item[0].linkId = "Basic.extension[0].extension[0]"
@@ -103,12 +104,12 @@ Usage:          #definition
 * item[0].item[3].required = true
 * item[0].item[3].repeats = false
 
-* item[0].item[3].linkId = "Basic.extension[0].extension[3]"
-* item[0].item[3].text = "Upload Document"
-* item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-performance#Basic.extension:performance.extension:attachment.value[x]:valueAttachment"
-* item[0].item[3].type = #attachment
-* item[0].item[3].required = false
-* item[0].item[3].repeats = false
+* item[0].item[4].linkId = "Basic.extension[0].extension[4]"
+* item[0].item[4].text = "Upload Document"
+* item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-performance#Basic.extension:performance.extension:attachment.value[x]:valueAttachment"
+* item[0].item[4].type = #attachment
+* item[0].item[4].required = false
+* item[0].item[4].repeats = false
 
 Instance:       ihris-page-performance
 InstanceOf:     IhrisPage
@@ -116,11 +117,17 @@ Title:          "iHRIS Basic Performance Page"
 Usage:          #example
 * code = IhrisResourceCodeSystem#page
 * extension[display].extension[resource].valueReference = Reference(StructureDefinition/ihris-basic-performance)
-* extension[display].extension[link].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
-* extension[display].extension[link].extension[text].valueString = "View Health Worker"
-* extension[display].extension[link].extension[button].valueBoolean = true
-* extension[display].extension[link].extension[icon].valueString = "mdi-account-arrow-right"
-* extension[display].extension[link].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
+* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/performance/FIELD?edit=true"
+* extension[display].extension[link][0].extension[field].valueString = "Basic.id"
+* extension[display].extension[link][0].extension[text].valueString = "Edit"
+* extension[display].extension[link][0].extension[button].valueBoolean = true
+* extension[display].extension[link][0].extension[icon].valueString = "mdi-pencil"
+* extension[display].extension[link][0].extension[class].valueString = "secondary"
+* extension[display].extension[link][1].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+* extension[display].extension[link][1].extension[text].valueString = "View Health Worker"
+* extension[display].extension[link][1].extension[button].valueBoolean = true
+* extension[display].extension[link][1].extension[icon].valueString = "mdi-account-arrow-right"
+* extension[display].extension[link][1].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
 * extension[display].extension[search][0].valueString = "Start Date|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-performance').extension.where(url='period').valuePeriod.start"
 * extension[display].extension[search][1].valueString = "End Date|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-performance').extension.where(url='period').valuePeriod.end"
 * extension[section][0].extension[title].valueString = "Performance Evaluation"

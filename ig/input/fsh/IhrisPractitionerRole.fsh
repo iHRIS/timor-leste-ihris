@@ -201,11 +201,17 @@ Title:          "iHRIS PractitionerRole Page"
 Usage:          #example
 * code = IhrisResourceCodeSystem#page
 * extension[display].extension[resource].valueReference = Reference(StructureDefinition/ihris-practitioner-role)
-* extension[display].extension[link].extension[field].valueString = "PractitionerRole.practitioner.reference"
-* extension[display].extension[link].extension[text].valueString = "View Practitioner"
-* extension[display].extension[link].extension[button].valueBoolean = true
-* extension[display].extension[link].extension[icon].valueString = "mdi-account-arrow-right"
-* extension[display].extension[link].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
+* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/practitionerrole/FIELD?edit=true"
+* extension[display].extension[link][0].extension[field].valueString = "PractitionerRole.id"
+* extension[display].extension[link][0].extension[text].valueString = "Edit"
+* extension[display].extension[link][0].extension[button].valueBoolean = true
+* extension[display].extension[link][0].extension[icon].valueString = "mdi-pencil"
+* extension[display].extension[link][0].extension[class].valueString = "secondary"
+* extension[display].extension[link][1].extension[field].valueString = "PractitionerRole.practitioner.reference"
+* extension[display].extension[link][1].extension[text].valueString = "View Practitioner"
+* extension[display].extension[link][1].extension[button].valueBoolean = true
+* extension[display].extension[link][1].extension[icon].valueString = "mdi-account-arrow-right"
+* extension[display].extension[link][1].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
 * extension[display].extension[search][0].valueString = "Job|PractitionerRole.code[0].coding[0]"
 * extension[display].extension[search][1].valueString = "Start Date|PractitionerRole.period.start"
 * extension[display].extension[search][2].valueString = "Practitioner|PractitionerRole.practitioner"
@@ -392,17 +398,20 @@ Usage:          #definition
 * purpose = "Workflow page for ending a role/job."
 
 * item[0].linkId = "PractitionerRole"
+* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.id"
 * item[0].text = "Job End Date"
 * item[0].type = #group
 
-* item[0].item[0].linkId = "period.end"
+* item[0].item[0].linkId = "PractitionerRole.period.end"
 * item[0].item[0].text = "End Date"
+* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.period.end"
 * item[0].item[0].type = #date
 * item[0].item[0].required = true
 * item[0].item[0].repeats = false
 
 * item[0].item[1].linkId = "departure"
 * item[0].item[1].text = "Reason For Departure"
+* item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:reasonForDepature.value[x]:valueCoding"
 * item[0].item[1].type = #choice
 * item[0].item[1].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-reason-departure-valueset"
 * item[0].item[1].required = true
@@ -422,14 +431,17 @@ Usage:          #definition
 
 * item[0].linkId = "PractitionerRole"
 * item[0].text = "Promotion Details"
+* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.id"
 * item[0].type = #group
 
 * item[0].item[0].linkId = "OldPractitionerRole"
 * item[0].item[0].text = "Old Position Details"
+* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.id"
 * item[0].item[0].type = #group
 
-* item[0].item[0].item[0].linkId = "period.end"
+* item[0].item[0].item[0].linkId = "PractitionerRole.period.end"
 * item[0].item[0].item[0].text = "Position Change Date"
+* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.period.end"
 * item[0].item[0].item[0].type = #dateTime
 * item[0].item[0].item[0].required = true
 * item[0].item[0].item[0].repeats = false
@@ -444,41 +456,46 @@ Usage:          #definition
 
 * item[0].item[1].linkId = "NewPractitionerRole"
 * item[0].item[1].text = "New Position Details"
+* item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.id"
 * item[0].item[1].type = #group
 
-* item[0].item[1].item[0].linkId = "code"
+* item[0].item[1].item[0].linkId = "PractitionerRole.code"
 * item[0].item[1].item[0].text = "New Job Title"
+* item[0].item[1].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.code"
 * item[0].item[1].item[0].type = #choice
 * item[0].item[1].item[0].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-job-timor"
 * item[0].item[1].item[0].required = true
 * item[0].item[1].item[0].repeats = false
 
-* item[0].item[1].item[1].linkId = "location"
+* item[0].item[1].item[1].linkId = "PractitionerRole.location"
 * item[0].item[1].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.location"
 * item[0].item[1].item[1].text = "Workplace"
 * item[0].item[1].item[1].type = #reference
 * item[0].item[1].item[1].required = true
 * item[0].item[1].item[1].repeats = false
 
-* item[0].item[1].item[2].linkId = "salary"
+* item[0].item[1].item[2].linkId = "PractitionerRole.extension[0]"
 * item[0].item[1].item[2].text = "New Salary"
+* item[0].item[1].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:salary.value[x]:valueMoney"
 * item[0].item[1].item[2].type = #string
 * item[0].item[1].item[2].required = true
 * item[0].item[1].item[2].repeats = false
 
-* item[0].item[1].item[3].linkId = "scale"
+* item[0].item[1].item[3].linkId = "PractitionerRole.extension[1]"
 * item[0].item[1].item[3].text = "New Scale"
+* item[0].item[1].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:scale.value[x]:valueString"
 * item[0].item[1].item[3].type = #string
 * item[0].item[1].item[3].required = false
 * item[0].item[1].item[3].repeats = false
 
-* item[0].item[1].item[4].linkId = "grade"
-* item[0].item[1].item[4].text = "New Grale"
+* item[0].item[1].item[4].linkId = "PractitionerRole.extension[2]"
+* item[0].item[1].item[4].text = "New Grade"
+* item[0].item[1].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:grade.value[x]:valueString"
 * item[0].item[1].item[4].type = #string
 * item[0].item[1].item[4].required = false
 * item[0].item[1].item[4].repeats = false
 
-* item[0].item[1].item[5].linkId = "jobInformationRemark"
+* item[0].item[1].item[5].linkId = "PractitionerRole.extension[3]"
 * item[0].item[1].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:jobInformationRemark.value[x]:valueString"
 * item[0].item[1].item[5].text = "Remark"
 * item[0].item[1].item[5].type = #string

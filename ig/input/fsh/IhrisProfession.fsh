@@ -21,6 +21,7 @@ Description:    "iHRIS Profile of the Basic resource for Profession."
 * extension[profession].extension[compoundAllies].valueCoding 0..1 MS
 * extension[profession].extension[attachment].valueAttachment ^label = "Upload Documents"
 * extension[profession].extension[attachment].valueAttachment MS
+* extension[profession].extension[attachment] ^label = "Documents"
     
 Extension:      IhrisProfession
 Id:             ihris-profession
@@ -109,7 +110,7 @@ Usage:          #definition
 
 * item[0].linkId = "Basic"
 * item[0].text = "Profession"
-* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-profession#Basic.extension:practitioner.value[x]:valueReference.reference"
+* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-profession#Basic.extension:practitioner"
 * item[0].type = #group
 
 * item[0].item[0].linkId = "Basic.extension[0].extension[0]"
@@ -173,16 +174,22 @@ Title:          "Profession"
 Usage:          #example
 * code = IhrisResourceCodeSystem#page
 * extension[display].extension[resource].valueReference = Reference(StructureDefinition/ihris-basic-profession)
-* extension[display].extension[link][0].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
-* extension[display].extension[link][0].extension[text].valueString = "View Health Worker"
+* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/profession/FIELD?edit=true"
+* extension[display].extension[link][0].extension[field].valueString = "Basic.id"
+* extension[display].extension[link][0].extension[text].valueString = "Edit"
 * extension[display].extension[link][0].extension[button].valueBoolean = true
-* extension[display].extension[link][0].extension[icon].valueString = "mdi-account-arrow-right"
-* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
+* extension[display].extension[link][0].extension[icon].valueString = "mdi-pencil"
+* extension[display].extension[link][0].extension[class].valueString = "secondary"
 * extension[display].extension[link][1].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
-* extension[display].extension[link][1].extension[text].valueString = "Add Another"
+* extension[display].extension[link][1].extension[text].valueString = "View Health Worker"
 * extension[display].extension[link][1].extension[button].valueBoolean = true
 * extension[display].extension[link][1].extension[icon].valueString = "mdi-account-arrow-right"
-* extension[display].extension[link][1].extension[url].valueUrl = "/questionnaire/ihris-profession/profession?practitioner=FIELD"
+* extension[display].extension[link][1].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
+* extension[display].extension[link][2].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+* extension[display].extension[link][2].extension[text].valueString = "Add Another"
+* extension[display].extension[link][2].extension[button].valueBoolean = true
+* extension[display].extension[link][2].extension[icon].valueString = "mdi-account-arrow-right"
+* extension[display].extension[link][2].extension[url].valueUrl = "/questionnaire/ihris-profession/profession?practitioner=FIELD"
 * extension[display].extension[search][0].valueString = "Practitioner|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
 * extension[display].extension[search][1].valueString = "Profession|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='profession').valueCoding.display"
 * extension[display].extension[search][2].valueString = "Profession By PENSS|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-profession').extension.where(url='professionByPENSS').valueCoding.display"

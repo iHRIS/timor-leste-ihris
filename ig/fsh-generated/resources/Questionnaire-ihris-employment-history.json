@@ -153,7 +153,7 @@
         },
         {
           "linkId": "Basic.extension[0].extension[9]",
-          "text": "Attachment",
+          "text": "Upload Document",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-employment-history#Basic.extension:employmentHistory.extension:attachment.value[x]:valueAttachment",
           "type": "attachment",
           "required": false,
@@ -162,7 +162,7 @@
       ],
       "linkId": "Basic",
       "text": "Work Experience",
-      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-employment-history#Basic.extension:practitioner.value[x].valueReference",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-employment-history#Basic.extension:practitioner",
       "type": "group"
     }
   ],

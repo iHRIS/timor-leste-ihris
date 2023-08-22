@@ -21,6 +21,7 @@ Description:    "iHRIS Profile of the Basic resource for Leave."
 * extension[leave].extension[daysRequested].valueInteger MS
 * extension[leave].extension[attachment].valueAttachment ^label = "Upload Documents"
 * extension[leave].extension[attachment].valueAttachment MS
+* extension[leave].extension[attachment] ^label = "Documents"
     
 Extension:      IhrisLeave
 Id:             ihris-leave
@@ -90,7 +91,7 @@ Usage:          #definition
 
 * item[0].linkId = "Basic"
 * item[0].text = "Leave Details"
-* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:practitioner.value[x]:valueReference.reference"
+* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:practitioner"
 * item[0].type = #group
 
 * item[0].item[0].linkId = "Basic.extension[0].extension[0]"
@@ -103,14 +104,14 @@ Usage:          #definition
 
 * item[0].item[1].linkId = "Basic.extension[0].extension[1]"
 * item[0].item[1].text = "Start Date"
-* item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:leave.extension:dateRequested.value[x]:valuePeriod.start"
+* item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:leave.extension:period.value[x]:valuePeriod.start"
 * item[0].item[1].type = #dateTime
 * item[0].item[1].required = true
 * item[0].item[1].repeats = false
 
 * item[0].item[2].linkId = "Basic.extension[0].extension[2]"
 * item[0].item[2].text = "End Date"
-* item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:leave.extension:dateRequested.value[x]:valuePeriod.end"
+* item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:leave.extension:period.value[x]:valuePeriod.end"
 * item[0].item[2].type = #dateTime
 * item[0].item[2].required = true
 * item[0].item[2].repeats = false
@@ -135,11 +136,17 @@ Title:          "iHRIS Basic Leave Page"
 Usage:          #example
 * code = IhrisResourceCodeSystem#page
 * extension[display].extension[resource].valueReference = Reference(StructureDefinition/ihris-basic-leave)
-* extension[display].extension[link].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
-* extension[display].extension[link].extension[text].valueString = "View Health Worker"
-* extension[display].extension[link].extension[button].valueBoolean = true
-* extension[display].extension[link].extension[icon].valueString = "mdi-account-arrow-right"
-* extension[display].extension[link].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
+* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/leave/FIELD?edit=true"
+* extension[display].extension[link][0].extension[field].valueString = "Basic.id"
+* extension[display].extension[link][0].extension[text].valueString = "Edit"
+* extension[display].extension[link][0].extension[button].valueBoolean = true
+* extension[display].extension[link][0].extension[icon].valueString = "mdi-pencil"
+* extension[display].extension[link][0].extension[class].valueString = "secondary"
+* extension[display].extension[link][1].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+* extension[display].extension[link][1].extension[text].valueString = "View Health Worker"
+* extension[display].extension[link][1].extension[button].valueBoolean = true
+* extension[display].extension[link][1].extension[icon].valueString = "mdi-account-arrow-right"
+* extension[display].extension[link][1].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
 * extension[display].extension[search][0].valueString = "Leave Type|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-leave').extension.where(url='leave-type').valueCoding"
 * extension[display].extension[search][1].valueString = "Start Date|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-leave').extension.where(url='period').valuePeriod.start"
 * extension[display].extension[search][2].valueString = "End Date|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-leave').extension.where(url='period').valuePeriod.end"

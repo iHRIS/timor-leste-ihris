@@ -12,7 +12,7 @@
     {
       "linkId": "Basic",
       "text": "Qualification",
-      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:practitioner.value[x].valueReference",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:practitioner",
       "type": "group",
       "item": [
         {
@@ -43,7 +43,7 @@
         },
         {
           "linkId": "Basic.extension[0].extension[3]",
-          "text": "Attachment",
+          "text": "Upload Document",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:educationHistory.extension:attachment.value[x]:valueAttachment",
           "type": "attachment",
           "required": false,

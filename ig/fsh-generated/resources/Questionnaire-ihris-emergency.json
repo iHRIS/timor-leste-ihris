@@ -155,14 +155,14 @@
         {
           "linkId": "Basic.extension[0].extension[9]",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-emergency#Basic.extension:emergency.extension:attachment.value[x]:valueAttachment",
-          "text": "Attachment",
+          "text": "Upload Document",
           "type": "attachment",
           "required": false,
           "repeats": false
         }
       ],
       "linkId": "Basic",
-      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-emergency#Basic.extension:practitioner.value[x]:valueReference.reference",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-emergency#Basic.extension:practitioner",
       "text": "Emergency",
       "type": "group"
     }

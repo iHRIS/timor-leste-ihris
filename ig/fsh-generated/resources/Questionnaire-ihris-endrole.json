@@ -16,12 +16,14 @@
   "item": [
     {
       "linkId": "PractitionerRole",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.id",
       "text": "Job End Date",
       "type": "group",
       "item": [
         {
-          "linkId": "period.end",
+          "linkId": "PractitionerRole.period.end",
           "text": "End Date",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.period.end",
           "type": "date",
           "required": true,
           "repeats": false
@@ -29,6 +31,7 @@
         {
           "linkId": "departure",
           "text": "Reason For Departure",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:reasonForDepature.value[x]:valueCoding",
           "type": "choice",
           "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-reason-departure-valueset",
           "required": true,

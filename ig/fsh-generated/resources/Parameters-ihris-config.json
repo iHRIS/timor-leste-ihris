@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2023-08-02T11:19:23.797Z",
+        "when": "2023-08-22T14:18:50.107Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "PKBjW6KHqIqeIJ2yeYlq53J28QPNFc9hyDebIBUcq2X4Upi3H0YN03yis1DyM9HtsiKOvvJk/ukzSQxwFkb9GrhHkGWQsTK8KZICPtnlgZS3MDdc0pSVFpi5sAP7Ag6UhSR11QNiVAmeb9gGyO7BchM4CDwTD6VUNlZgmcIBTSk="
+        "data": "FuC0L2ui06BNIj7PBUHIqzj3fq3z20moCPtAcHjI5u2PZrs4Ux1cXae9SFOZz/L9ywc2aajmjiWjG2VGMj0eXjTpiTkHwzhc3JSupg8eeE6J64Rb+MoU0WyTPvBMwaG58ECnwT1uIOEghRMytJj24HB5Kd5gz3AwK7XSyZoVadY="
       }
     },
     {
@@ -129,6 +129,10 @@
         {
           "name": "site:nav:menu:dashboard:url",
           "valueString": "/ihrisapp/ihris-dashboard/index.html#/dashBuilder/1942"
+        },
+        {
+          "name": "site:nav:menu:dashboard:external",
+          "valueString": "true"
         },
         {
           "name": "site:nav:active",
@@ -476,7 +480,7 @@
         },
         {
           "name": "site:nav:menu:password:url",
-          "valueString": "/questionnaire/ihris-change-password/person"
+          "valueString": "/questionnaire/ihris-change-password/user"
         },
         {
           "name": "site:nav:menu:ihris-apps-list:text",

@@ -18,6 +18,7 @@ Description:    "iHRIS Profile of the Basic resource for Emergency."
 * extension[emergency].extension[address].valueString MS
 * extension[emergency].extension[remark].valueString MS
 * extension[emergency].extension[attachment].valueAttachment MS
+* extension[emergency].extension[attachment] ^label = "Documents"
     
 Extension:      IhrisEmergency
 Id:             ihris-emergency
@@ -81,7 +82,7 @@ Usage:          #definition
 * purpose = "Workflow page for recording a Emergency information."
 
 * item[0].linkId = "Basic"
-* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-emergency#Basic.extension:practitioner.value[x]:valueReference.reference"
+* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-emergency#Basic.extension:practitioner"
 * item[0].text = "Emergency"
 * item[0].type = #group
 
@@ -163,7 +164,7 @@ Usage:          #definition
 
 * item[0].item[9].linkId = "Basic.extension[0].extension[9]"
 * item[0].item[9].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-emergency#Basic.extension:emergency.extension:attachment.value[x]:valueAttachment"
-* item[0].item[9].text = "Attachment"
+* item[0].item[9].text = "Upload Document"
 * item[0].item[9].type = #attachment
 * item[0].item[9].required = false
 * item[0].item[9].repeats = false
@@ -174,11 +175,17 @@ Title:          "iHRIS Basic Emergency Page"
 Usage:          #example
 * code = IhrisResourceCodeSystem#page
 * extension[display].extension[resource].valueReference = Reference(StructureDefinition/ihris-basic-emergency)
-* extension[display].extension[link][0].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
-* extension[display].extension[link][0].extension[text].valueString = "View Health Worker"
+* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/emergency/FIELD?edit=true"
+* extension[display].extension[link][0].extension[field].valueString = "Basic.id"
+* extension[display].extension[link][0].extension[text].valueString = "Edit"
 * extension[display].extension[link][0].extension[button].valueBoolean = true
-* extension[display].extension[link][0].extension[icon].valueString = "mdi-account-arrow-right"
-* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/bhpc/FIELD"
+* extension[display].extension[link][0].extension[icon].valueString = "mdi-pencil"
+* extension[display].extension[link][0].extension[class].valueString = "secondary"
+* extension[display].extension[link][1].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+* extension[display].extension[link][1].extension[text].valueString = "View Health Worker"
+* extension[display].extension[link][1].extension[button].valueBoolean = true
+* extension[display].extension[link][1].extension[icon].valueString = "mdi-account-arrow-right"
+* extension[display].extension[link][1].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
 * extension[display].extension[search][0].valueString = "Emergency|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-emergency').extension.where(url='name').valueString"
 * extension[display].extension[field][0].extension[path].valueString = "Basic.extension:practitioner.value[x]:valueReference"
 * extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true

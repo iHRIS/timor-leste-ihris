@@ -17,7 +17,7 @@
     {
       "linkId": "Basic",
       "text": "Leave Details",
-      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:practitioner.value[x]:valueReference.reference",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:practitioner",
       "type": "group",
       "item": [
         {
@@ -32,7 +32,7 @@
         {
           "linkId": "Basic.extension[0].extension[1]",
           "text": "Start Date",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:leave.extension:dateRequested.value[x]:valuePeriod.start",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:leave.extension:period.value[x]:valuePeriod.start",
           "type": "dateTime",
           "required": true,
           "repeats": false
@@ -40,7 +40,7 @@
         {
           "linkId": "Basic.extension[0].extension[2]",
           "text": "End Date",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:leave.extension:dateRequested.value[x]:valuePeriod.end",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-leave#Basic.extension:leave.extension:period.value[x]:valuePeriod.end",
           "type": "dateTime",
           "required": true,
           "repeats": false

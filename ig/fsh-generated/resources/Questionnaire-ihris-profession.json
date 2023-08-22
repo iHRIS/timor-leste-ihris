@@ -12,7 +12,7 @@
     {
       "linkId": "Basic",
       "text": "Profession",
-      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-profession#Basic.extension:practitioner.value[x]:valueReference.reference",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-profession#Basic.extension:practitioner",
       "type": "group",
       "item": [
         {
